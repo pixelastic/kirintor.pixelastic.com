@@ -21,7 +21,7 @@
 	height:19px;
 }
 
-/* la fenetre où les couleurs sont affichées */
+/* la fenetre oÃ¹ les couleurs sont affichÃ©es */
 .barre_tools .fenetre_color {
 	display:none;
 	position:absolute;
@@ -33,7 +33,7 @@
 	background-color: #c0c0c0;
 	z-index:10;
 }
-/* L'un des liens de couleur (la couleur de fond est spécifié dans functions/form.php */
+/* L'un des liens de couleur (la couleur de fond est spÃ©cifiÃ© dans functions/form.php */
 .barre_tools .fenetre_color .choose_color {
 	display: block;
 	float:left;
@@ -43,7 +43,7 @@
 	border-right: 1px solid #c0c0c0;
 	border-bottom: 1px solid #c0c0c0;
 }
-/* la fenetre où les tailles sont affichées */
+/* la fenetre oÃ¹ les tailles sont affichÃ©es */
 .barre_tools .fenetre_size {
 	display:none;
 	position:absolute;
@@ -54,7 +54,7 @@
 	background-color: #c0c0c0;
 	z-index:10;
 }
-/* L'un des liens de taille (la taille du texte est spécifié dans function.php) */
+/* L'un des liens de taille (la taille du texte est spÃ©cifiÃ© dans function.php) */
 .barre_tools .fenetre_size a {
 	display: block;
 	float:left;
@@ -77,7 +77,7 @@
 	font-size:0.8em;
 	width: 400px;
 }
-/* La petite image de choix des images qui doit s'affiche à droite du texte */
+/* La petite image de choix des images qui doit s'affiche Ã  droite du texte */
 .form_img_mini {
 	position:absolute;
 	margin-left:390px;

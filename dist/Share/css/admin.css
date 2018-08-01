@@ -1,6 +1,6 @@
 @charset "iso-8859-1";
 
-/* Liste des items dans l'admin de manière générale */
+/* Liste des items dans l'admin de maniÃ¨re gÃ©nÃ©rale */
 .liste_admin {
 	clear:both;
 	width:585px;
@@ -14,7 +14,7 @@
 	text-align:right;
 }
 
-/* Liste des pages, un peu d'espace pour le numero, le lien et le début du texte */
+/* Liste des pages, un peu d'espace pour le numero, le lien et le dÃ©but du texte */
 .liste_pages label {
 	width: 2em;
 }
@@ -25,7 +25,7 @@
 	font-size:0.7em;
 }
 
-/* LIste des profils des membres, avec le nombre de persos et la somme des récits */
+/* LIste des profils des membres, avec le nombre de persos et la somme des rÃ©cits */
 .liste_profils a {
 	width: 300px;
 }
@@ -36,7 +36,7 @@
 	width: 100px;
 }
 
-/* LIste des persos des membres, avec la petite image pour valider/dévalider et le nombre récits dans le span */
+/* LIste des persos des membres, avec la petite image pour valider/dÃ©valider et le nombre rÃ©cits dans le span */
 .liste_persos label {
 	width: 100px;
 }
@@ -44,7 +44,7 @@
 	width: 300px;
 }
 
-/* Pour les récits, un espace pour la date, un grand pour le titre/lien et tout à droite l'auteur */
+/* Pour les rÃ©cits, un espace pour la date, un grand pour le titre/lien et tout Ã  droite l'auteur */
 .liste_recits label {
 	width:9em;
 	text-align:left;
@@ -59,7 +59,7 @@
 	width:100px;
 	padding-right:10px;
 }
-/* Pour les news, petit espace pour l'id, grand pour le lien et apercu du début de la news */
+/* Pour les news, petit espace pour l'id, grand pour le lien et apercu du dÃ©but de la news */
 .liste_news label {
 	width:20px;
 }
@@ -112,7 +112,7 @@
 	width:29em;
 }
 
-/* Dans la page d'admin d'un compte ou d'un perso, le div et le lien de ses récits */
+/* Dans la page d'admin d'un compte ou d'un perso, le div et le lien de ses rÃ©cits */
 .admin_view_recits {
 	font-weight:bold;
 	color: #4b4b4b;

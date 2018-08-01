@@ -4,8 +4,8 @@ var ggWinContent;
 var ggPosX = -1;
 var ggPosY = -1;
 
-Calendar.Months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
-"Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
+Calendar.Months = ["Janvier", "FÃ©vrier", "Mars", "Avril", "Mai", "Juin",
+"Juillet", "AoÃ»t", "Septembre", "Octobre", "Novembre", "DÃ©cembre"];
 
 // Non-Leap year Month days..
 Calendar.DOMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
@@ -16,7 +16,7 @@ Calendar.lDOMonth = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 function Calendar(p_item, p_month, p_year, p_format) {
 	if ((p_month == null) && (p_year == null))	return;
 
-	//Si on ne précise pas de mois, alors calendrier de l'année
+	//Si on ne prÃ©cise pas de mois, alors calendrier de l'annÃ©e
 	if (p_month == null) {
 		this.gMonthName = null;
 		this.gMonth = null;
@@ -36,7 +36,7 @@ function Calendar(p_item, p_month, p_year, p_format) {
 	this.gReturnItem = p_item;
 }
 
-//définitions de fonctions barbare...
+//dÃ©finitions de fonctions barbare...
 Calendar.get_month = Calendar_get_month;
 Calendar.get_daysofmonth = Calendar_get_daysofmonth;
 Calendar.calc_month_year = Calendar_calc_month_year;
@@ -49,9 +49,9 @@ function Calendar_get_month(monthNo) {
 //Retourne le nombre de jours dans un mois
 function Calendar_get_daysofmonth(monthNo, p_year) {
 	/* 
-	Les années divisibles par 4 sont bissextiles...
+	Les annÃ©es divisibles par 4 sont bissextiles...
 	Sauf si elles sont aussi divisibles par 100...
-	Mais sont quand même bissextiles si divisible par 400
+	Mais sont quand mÃªme bissextiles si divisible par 400
 	*/
 	if ((p_year % 4) == 0) {
 		if ((p_year % 100) == 0 && (p_year % 400) != 0)
@@ -61,8 +61,8 @@ function Calendar_get_daysofmonth(monthNo, p_year) {
 		return Calendar.DOMonth[monthNo];
 }
 
-//Retourne un tableau à deux valeurs, la premiere le mois, la seconde l'année
-//calculée à partir du mois et de l'année donnée +/- incr
+//Retourne un tableau Ã  deux valeurs, la premiere le mois, la seconde l'annÃ©e
+//calculÃ©e Ã  partir du mois et de l'annÃ©e donnÃ©e +/- incr
 function Calendar_calc_month_year(p_Month, p_Year, incr) {
 	var ret_arr = new Array();
 	
@@ -70,12 +70,12 @@ function Calendar_calc_month_year(p_Month, p_Year, incr) {
 	case (-1) :
 		// En arriere
 		if (p_Month == 0) {
-			//Année précédente, Décembre
+			//AnnÃ©e prÃ©cÃ©dente, DÃ©cembre
 			ret_arr[0] = 11;
 			ret_arr[1] = parseInt(p_Year) - 1;
 		}
 		else {
-			//Même année, un mois de moins
+			//MÃªme annÃ©e, un mois de moins
 			ret_arr[0] = parseInt(p_Month) - 1;
 			ret_arr[1] = parseInt(p_Year);
 		}
@@ -83,12 +83,12 @@ function Calendar_calc_month_year(p_Month, p_Year, incr) {
 	case (1) :
 		// En avant
 		if (p_Month == 11) {
-			//Année suivante, Janvier
+			//AnnÃ©e suivante, Janvier
 			ret_arr[0] = 0;
 			ret_arr[1] = parseInt(p_Year) + 1;
 		}
 		else {
-			//Même année, un mois de plus
+			//MÃªme annÃ©e, un mois de plus
 			ret_arr[0] = parseInt(p_Month) + 1;
 			ret_arr[1] = parseInt(p_Year);
 		}
@@ -98,7 +98,7 @@ function Calendar_calc_month_year(p_Month, p_Year, incr) {
 	return ret_arr;
 }
 
-// (Compatibilité Netscape 3... on doit créer une instance avant de pouvoir définir le prototype)
+// (CompatibilitÃ© Netscape 3... on doit crÃ©er une instance avant de pouvoir dÃ©finir le prototype)
 new Calendar();
 
 //retourne le code complet du calendrier du mois
@@ -155,7 +155,7 @@ Calendar.prototype.write_weekend_string = function(vday) {
 }
 
 Calendar.prototype.cal_data = function() {
-	//premier du mois de l'année selectionné
+	//premier du mois de l'annÃ©e selectionnÃ©
 	var vDate = new Date();
 	vDate.setDate(1);
 	vDate.setMonth(this.gMonth);
@@ -168,14 +168,14 @@ Calendar.prototype.cal_data = function() {
 	var vCode = "";
 
 	/*
-		On mets des cases blanches du début au premier jour 
+		On mets des cases blanches du dÃ©but au premier jour 
 	*/
 	vCode = vCode + "<tr>";
 	for (i=0; i<vFirstDay; i++) {
 		vCode = vCode + "<td " + this.write_weekend_string(i) + "></td>";
 	}
 
-	// On écrit la fin de la première semaine
+	// On Ã©crit la fin de la premiÃ¨re semaine
 	for (j=vFirstDay; j<7; j++) {
 		vCode+= '<td ' + this.write_weekend_string(j) + '>' + 
 			'<a href="javascript:void(0);" '  + 
@@ -183,10 +183,10 @@ Calendar.prototype.cal_data = function() {
 		vDay=vDay + 1;
 	}
 
-	vCode = vCode + "</tr>"; //On ferme la première ligne
+	vCode = vCode + "</tr>"; //On ferme la premiÃ¨re ligne
 	
 
-	// On écrit les autres lignes
+	// On Ã©crit les autres lignes
 	for (k=2; k<7; k++) {
 		vCode+= "<tr>";
 
@@ -198,19 +198,19 @@ Calendar.prototype.cal_data = function() {
 			'</a></td>';
 			vDay=vDay + 1;
 
-			//Si je vais dépasser le dernier jour je m'arrete
+			//Si je vais dÃ©passer le dernier jour je m'arrete
 			if (vDay > vLastDay) {
 				vOnLastDay = 1;
 				break;
 			}
 		}
 
-		//Si je suis arrivé à la fin de la ligne, je passe à la suivante
+		//Si je suis arrivÃ© Ã  la fin de la ligne, je passe Ã  la suivante
 		if (j == 6)	vCode = vCode + "</tr>";
-		if (vOnLastDay == 1) break; //Si je me suis arrété en cours de route (i.e dernier jour du mois) je ne continue pas
+		if (vOnLastDay == 1) break; //Si je me suis arrÃ©tÃ© en cours de route (i.e dernier jour du mois) je ne continue pas
 	}
 	
-	// Et on termine la fin comme on a commencé, avec des carrés blancs vides
+	// Et on termine la fin comme on a commencÃ©, avec des carrÃ©s blancs vides
 	for (m=1; m<(7-j); m++) {
 		vCode+= "<td " + this.write_weekend_string(j+m) +" class='en_trop'>" + m + "</td>";
 	}
@@ -221,11 +221,11 @@ Calendar.prototype.cal_data = function() {
 Calendar.prototype.show = function() {
 	var vCode = "";
 
-	// Mois/année du calendrier
+	// Mois/annÃ©e du calendrier
 	ggWinContent += '<div class="overlib_calendar_mois">';
 	ggWinContent += "<span>"+ (this.gMonthName + " " + this.gYear) + "</span>";
 	
-	// On trouve les mois/année suivantes/précédentes
+	// On trouve les mois/annÃ©e suivantes/prÃ©cÃ©dentes
 	var prevMMYYYY = Calendar.calc_month_year(this.gMonth, this.gYear, -1);
 	var prevMM = prevMMYYYY[0];
 	var prevYYYY = prevMMYYYY[1];
@@ -236,7 +236,7 @@ Calendar.prototype.show = function() {
 	
 	ggWinContent += '<div style="float:left">';
 	
-	ggWinContent += '[ <a href="javascript:void(0);" onClick="Build(\'' + this.gReturnItem + '\', \'' + this.gMonth + '\', \'' + (parseInt(this.gYear)-1) + '\', \'' + this.gFormat + '\');"> << Année</a> ]';
+	ggWinContent += '[ <a href="javascript:void(0);" onClick="Build(\'' + this.gReturnItem + '\', \'' + this.gMonth + '\', \'' + (parseInt(this.gYear)-1) + '\', \'' + this.gFormat + '\');"> << AnnÃ©e</a> ]';
 	ggWinContent += '[ <a href="javascript:void(0);" onClick="Build(\'' + this.gReturnItem + '\', \'' + prevMM + '\', \'' + prevYYYY + '\', \'' + this.gFormat + '\');"> << Mois</a> ]';
 	
 	ggWinContent += '</div>';
@@ -245,7 +245,7 @@ Calendar.prototype.show = function() {
 	ggWinContent += '<div style="float:right">';
 	
 	ggWinContent += '[ <a href="javascript:void(0);" onClick="Build(\'' + this.gReturnItem + '\', \'' + nextMM + '\', \'' + nextYYYY + '\', \'' + this.gFormat + '\');"> Mois >></a> ]';
-	ggWinContent += '[ <a href="javascript:void(0);" onClick="Build(\'' + this.gReturnItem + '\', \'' + this.gMonth + '\', \'' + (parseInt(this.gYear)+1) + '\', \'' + this.gFormat + '\');"> Année >></a> ]';
+	ggWinContent += '[ <a href="javascript:void(0);" onClick="Build(\'' + this.gReturnItem + '\', \'' + this.gMonth + '\', \'' + (parseInt(this.gYear)+1) + '\', \'' + this.gFormat + '\');"> AnnÃ©e >></a> ]';
 	
 	ggWinContent += '</div>';
 	ggWinContent += '<div style="clear:both"></div></div>';
@@ -270,7 +270,7 @@ function put_in_form(cal_form_field, cal_form_day, cal_form_month, cal_form_year
 Calendar.prototype.format_data = function(p_day) {
 	var vData;
 	var vMonth = 1 + this.gMonth; //les mois sont du 0-11 dans l'array
-	vMonth = (vMonth.toString().length < 2) ? "0" + vMonth : vMonth; //On préfixe d'un 0 si <10
+	vMonth = (vMonth.toString().length < 2) ? "0" + vMonth : vMonth; //On prÃ©fixe d'un 0 si <10
 	var vMon = Calendar.get_month(this.gMonth).substr(0,3).toUpperCase(); //
 	var vFMon = Calendar.get_month(this.gMonth).toUpperCase();
 	var vY4 = new String(this.gYear);
@@ -357,7 +357,7 @@ function Build(p_item, p_month, p_year, p_format) {
 			
 	/*
 	Version qui marche sous IE
-	//On va trouver la position du calendrier, et on affiche le calendrier à coté
+	//On va trouver la position du calendrier, et on affiche le calendrier Ã  cotÃ©
 	eval("var pos_x = document.getElementById('img_calendar_" + p_item + "').x + 20");
 	eval("var pos_y = document.getElementById('img_calendar_" + p_item + "').y");
 	alert(pos_y);
@@ -365,7 +365,7 @@ function Build(p_item, p_month, p_year, p_format) {
 	*/
 
 	/*
-	// Premiere apparition (i.e pas de Next / Prev) alors on affiche à coté
+	// Premiere apparition (i.e pas de Next / Prev) alors on affiche Ã  cotÃ©
 	if (ggPosX == -1 && ggPosY == -1) {
 		
 		
@@ -382,7 +382,7 @@ function Build(p_item, p_month, p_year, p_format) {
 			}
 		}
 	else {
-		// Position sauvegardée, on l'y affiche
+		// Position sauvegardÃ©e, on l'y affiche
 		overlib(ggWinContent, AUTOSTATUSCAP, STICKY, CLOSECLICK, CSSSTYLE,
 			TEXTSIZEUNIT, "pt", TEXTSIZE, 8, CAPTIONSIZEUNIT, "pt", CAPTIONSIZE, 8, CLOSESIZEUNIT, "pt", CLOSESIZE, 8,
 			CAPTION, "Choisissez une date", FIXX, pos_x, FIXY, pox_y);
@@ -394,10 +394,10 @@ function Build(p_item, p_month, p_year, p_format) {
 
 function show_calendar() {
 	/*
-		argument[0] = Le champ de formulaire à remplir
-		argument[1] = spécification du mois (actuel par défaut)
-		argument[2] = spécification de l'année (actuel par défaut)
-		argument[3] = type de résultat (mm/dd/yyyy, dd/mm/yyyy)		
+		argument[0] = Le champ de formulaire Ã  remplir
+		argument[1] = spÃ©cification du mois (actuel par dÃ©faut)
+		argument[2] = spÃ©cification de l'annÃ©e (actuel par dÃ©faut)
+		argument[3] = type de rÃ©sultat (mm/dd/yyyy, dd/mm/yyyy)		
 	*/
 	p_item = arguments[0];
 	if (arguments[1] == null || arguments[1]==-1)
@@ -415,11 +415,11 @@ function show_calendar() {
 	Build(p_item, p_month, p_year, p_format);
 }
 
-/* Trouve la position d'un élément dans la page
-Mozzila trouve la position exacte à partir des .x et .y mais IE ne connait pas
-Il utilise .offsetLeft et .offsetTop (Mozzy aussi) mais ils les placent différemment, chacun en fonction du <div, <span conteneur
-mais ils ne considérent pas tous les mêmes balises comme des conteneurs ou non... td, li, etc
-Donc on fait une boucle à partir de l'élement parent .offsetParent jusqu'à ce qu'il n'y ai plus de parent, on additionne les positions à chaque fois et on aura la vraie position à la fin !
+/* Trouve la position d'un Ã©lÃ©ment dans la page
+Mozzila trouve la position exacte Ã  partir des .x et .y mais IE ne connait pas
+Il utilise .offsetLeft et .offsetTop (Mozzy aussi) mais ils les placent diffÃ©remment, chacun en fonction du <div, <span conteneur
+mais ils ne considÃ©rent pas tous les mÃªmes balises comme des conteneurs ou non... td, li, etc
+Donc on fait une boucle Ã  partir de l'Ã©lement parent .offsetParent jusqu'Ã  ce qu'il n'y ai plus de parent, on additionne les positions Ã  chaque fois et on aura la vraie position Ã  la fin !
 */
 function getX(obj)
 {

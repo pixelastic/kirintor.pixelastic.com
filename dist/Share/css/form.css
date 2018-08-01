@@ -48,7 +48,7 @@ fieldset.form_tab .input {
 	float:left;
 }
 
-/* Le mot "Erreur" qui s'afficge à coté des champs erronés */
+/* Le mot "Erreur" qui s'afficge Ã  cotÃ© des champs erronÃ©s */
 .form_tab .error_form {
 	font-weight:bold;
 	color:red;

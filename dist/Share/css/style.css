@@ -7,7 +7,7 @@ body {
 	color: #737373;
 	background : #152235;
 	text-align:center;
-	/* Couleurs des barres de défilement sous Internet Explorer */
+	/* Couleurs des barres de dÃ©filement sous Internet Explorer */
 	scrollbar-face-color: #737373;
 	scrollbar-highlight-color: #737373;
 	scrollbar-shadow-color: #152235;
@@ -42,7 +42,7 @@ a {
 a:hover {
 	color: #DAA520;	
 }
-/* UN lien pour éditer un event/recit. Au lieu de s'embeter avecd es float et des clear, on va le faire suffisemment large et aligné sur la doite */
+/* UN lien pour Ã©diter un event/recit. Au lieu de s'embeter avecd es float et des clear, on va le faire suffisemment large et alignÃ© sur la doite */
 .lien_edit_chrono {
 	display:block;
 	width: 520;
@@ -84,7 +84,7 @@ a:hover {
 
 
 
-/* Le petit message qui m'indique que ma version du Chrono-Events est à jour ou non */
+/* Le petit message qui m'indique que ma version du Chrono-Events est Ã  jour ou non */
 .warning_out_of_date {
 	display:list-item;
 	list-style: url("../../images/invalid.jpg") inside;
@@ -132,7 +132,7 @@ a:hover {
 
 
 
-/* Arborescence des événements */
+/* Arborescence des Ã©vÃ©nements */
 .arbo_ere_lien {
 	cursor:pointer;
 	color: #CC6735;
