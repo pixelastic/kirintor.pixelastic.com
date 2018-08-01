@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 require 'fileutils';
 
-Dir['./*.html'].each do |file|
+Dir['./*-r1696.html'].each do |file|
   content = File.read(file)
 
   content = content.gsub('%E2', 'a')
@@ -12,6 +12,9 @@ Dir['./*.html'].each do |file|
   content = content.gsub('%92', '-')
   content = content.gsub('%96', '-')
   content = content.gsub('%9C', 'oe')
+
+  content = content.gsub('%u92', "&#039;")
+  
 
   File.write(file, content);
 end
