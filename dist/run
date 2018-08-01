@@ -1,13 +1,16 @@
 #!/usr/bin/env ruby
-require 'fileutils'
+require 'fileutils';
 
 Dir['./*.html'].each do |file|
   content = File.read(file)
 
-  new_content = content.gsub(%r{<a href="(.*)">Envoyer un MP</a>}, '')
-  new_content = new_content.gsub(/<img src="img_genea(.*)>/, '')
+  content = content.gsub('Â%E2', 'a')
+  content = content.gsub('Â%3F', '?')
+  content = content.gsub('Â%85', '')
+  content = content.gsub('Â%92', '-')
+  content = content.gsub('Â%96', '-')
+  content = content.gsub('Â%9C', 'oe')
 
-  File.write(file, new_content)
-
-  # FileUtils.move(file, new_file)
+  File.write(file, content);
 end
+
