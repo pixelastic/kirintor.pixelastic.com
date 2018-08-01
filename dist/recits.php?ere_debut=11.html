@@ -1,132 +1,0 @@
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Les Terres de Kirin Tor</title>
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="Flint Gorgefeu">
-	<link rel="stylesheet" href="Share/css/style.css" type="text/css">
-	<link rel="stylesheet" href="Share/css/interface.css" type="text/css">
-	<link rel="stylesheet" href="Share/css/overdiv.css" type="text/css">
-	<link rel="stylesheet" href="Share/css/barre_tools.css" type="text/css">
-	<link rel="stylesheet" href="Share/css/form.css" type="text/css">
-	<link rel="stylesheet" href="Share/css/admin.css" type="text/css">
-	<script src="Share/js/overlib.js" language="javascript"></script>
-	<script src="Share/js/open_menu.js" language="javascript"></script>
-	<script src="Share/js/date_picker.js" language="javascript"></script>
-	<script src="Share/js/tools.js" language="javascript"></script>
-	<!--[if IE]>
-		<link rel="stylesheet" href="Share/css/IE_only.css" type="text/css">   
-	<![endif]-->
-
-</head>
-<div id="overDiv"></div>
-<body>
-	<div id="conteneur">
-		<div id="banniere">
-			<a href="index.html" class="lien_logo">&nbsp;</a>
-						<span class="irl_date">
-			1er Août 2018			</span>
-			<span class="kt_date">
-			<b>3ème jour</b> de la Décade du Lapin ( Lune de l'Esprit ) - 			</span>
-			</div>
-		<div id="menu">
-			<div class="menu_haut">&nbsp;</div>
-						<a href="index.html">Accueil</a>
-			<div style="margin-top:3px">	
-			</div>
-			<span>Histoire</span>
-			<a href="events.php?filtre=officiel.html">Chronologie officielle</a>
-			<a href="events.php?filtre=a_venir.html">Programme à venir</a>
-			<br>
-			<span>Récits</span>
-			<a href="recits.php?filtre=officiel.html">Légendes de Kirin Tor</a>
-			<a href="view_persos_complete.html">Personnages</a>
-			<a href="view_persos.html">Célébrités</a>
-			<a href="guildes.html">Guildes</a>
-			<br>
-			<span>Outils</span>
-			<a href="view_page.php?page_id=3.html">Calendrier</a>
-			<a href="view_page.php?page_id=17.html">Calendrier Illustré</a>
-			<a href="view_page.php?page_id=6.html">Mod d'interface</a>
-      <br>
-			
-			<span>Informations</span>
-			<a href="view_page.php?page_id=9.html">Historiens</a>
-			<a href="view_page.php?page_id=8.html">FAQ</a>
-			<a href="view_page.php?page_id=11.html">Liens</a>
-			<a href="view_page.php?page_id=10.html">Crédits</a>
-			<br>
-
-							
-
-				
-			<div class="menu_bas">&nbsp;</div>
-		</div>
-
-		<div id="principal">
-						
-	
-	
-<div class="event_swap_faction">
-		<a href="recits.php?filtre_faction=H.html" class="horde" >&nbsp;</a>
-	<a href="recits.php?filtre_faction=A.html" class="alliance" >&nbsp;</a>
-	<a href="recits.php?filtre_faction=.html" class="both" style="background-image: url(images/interface/faction_both_link.jpg)" >&nbsp;</a>
-</div>
-<div class="fenetre">			
-		<div class="fenetre_haut">Les Terres de Kirin Tor</div>
-		<div class="fenetre_corps">
-		
-<input type="button" value="Tout déplier" class="input" onClick="view_hide_all_except_events()">
-<input type="button" value="Tout replier" class="input" onClick="view_hide_all('none')">
-<input type="button" value="Tout voir" class="input" onClick="view_hide_all('block')">
-<br><br>
-
-
-
-<a href="recits.php?ere_debut=1.html" class="arbo_ere_lien">Ère du Renouveau [280]</a><br><br><a href="recits.php?ere_debut=2.html" class="arbo_ere_lien">Ère du Conflit [287]</a><br><br><a href="recits.php?ere_debut=3.html" class="arbo_ere_lien">Troisième Ère [406]</a><br><br><a href="recits.php?ere_debut=4.html" class="arbo_ere_lien">Quatrième Ère [334]</a><br><br><a href="recits.php?ere_debut=5.html" class="arbo_ere_lien">Cinquième Ère [187]</a><br><br><a href="recits.php?ere_debut=6.html" class="arbo_ere_lien">Sixième Ère [71]</a><br><br><a href="recits.php?ere_debut=7.html" class="arbo_ere_lien">Septième Ère [62]</a><br><br><a href="recits.php?ere_debut=8.html" class="arbo_ere_lien">Huitième Ère [18]</a><br><br><a href="recits.php?ere_debut=9.html" class="arbo_ere_lien">Neuvième Ère [15]</a><br><br><a href="recits.php?ere_debut=10.html" class="arbo_ere_lien">Dixième Ère [41]</a><br><br><div class="arbo_ere_lien" onclick="open_div('div_11')">Onzième Ère&nbsp;[12]</div>
-<div class="arbo_ere" id="div_11"><div class="arbo_lune_lien" onclick="open_div('div_11_1')">Lune de la Force&nbsp;[1]</div>
-<div class="arbo_lune" id="div_11_1"><div class="arbo_decade_lien" onclick="open_div('div_11_1_1')">Décade du Panda</div>
-<div class="arbo_decade" id="div_11_1_1"><label onMouseover="return overlib('11 Août 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 1 :&nbsp;</label><label onMouseover="return overlib('12 Août 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 2 :&nbsp;</label><label onMouseover="return overlib('13 Août 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 3 :&nbsp;</label><label onMouseover="return overlib('14 Août 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 4 :&nbsp;</label><label onMouseover="return overlib('15 Août 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 5 :&nbsp;</label><label onMouseover="return overlib('16 Août 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 6 :&nbsp;</label><label onMouseover="return overlib('17 Août 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 7 :&nbsp;</label><label onMouseover="return overlib('18 Août 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 8 :&nbsp;</label><label onMouseover="return overlib('19 Août 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 9 :&nbsp;</label><label onMouseover="return overlib('20 Août 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 10 :&nbsp;</label></div><div class="arbo_decade_lien" onclick="open_div('div_11_1_2')">Décade du Gorille</div>
-<div class="arbo_decade" id="div_11_1_2"><label onMouseover="return overlib('21 Août 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 1 :&nbsp;</label><label onMouseover="return overlib('22 Août 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 2 :&nbsp;</label><label onMouseover="return overlib('23 Août 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 3 :&nbsp;</label><label onMouseover="return overlib('24 Août 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 4 :&nbsp;</label><label onMouseover="return overlib('25 Août 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 5 :&nbsp;</label><label onMouseover="return overlib('26 Août 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 6 :&nbsp;</label><label onMouseover="return overlib('27 Août 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 7 :&nbsp;</label><label onMouseover="return overlib('28 Août 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 8 :&nbsp;</label><label onMouseover="return overlib('29 Août 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 9 :&nbsp;</label><label onMouseover="return overlib('30 Août 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 10 :&nbsp;</label></div><div class="arbo_decade_lien" onclick="open_div('div_11_1_3')">Décade de l'Ours&nbsp;[1]</div>
-<div class="arbo_decade" id="div_11_1_3"><label onMouseover="return overlib('31 Août 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 1 :&nbsp;</label><label onMouseover="return overlib('01 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 2 :&nbsp;</label><label onMouseover="return overlib('02 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 3 :&nbsp;</label><label onMouseover="return overlib('03 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 4 :&nbsp;</label><label onMouseover="return overlib('04 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 5 :&nbsp;</label><label onMouseover="return overlib('05 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 6 :&nbsp;</label><label onMouseover="return overlib('06 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 7 :&nbsp;</label><label onMouseover="return overlib('07 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 8 :&nbsp;</label><label onMouseover="return overlib('08 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 9 :&nbsp;</label><label onMouseover="return overlib('09 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 10 :&nbsp;</label><span onclick="open_div('div_11_1_3_10_r_1841')" class="non_officiel">[Nafein] Purification</span>
-<blockquote class="arbo_event" id="div_11_1_3_10_r_1841" name="div_11_1_3_10_r_1841"> Hurlevent est à sa manière une ville bien étrange, on y rencontre toujours au détour d'une rue une personne que l'on connait. C'est ainsi que sans but précis Nafein déambule sur les pavés de la ville. Au détour d'un chemin il tombe sur Telienaa la guériseuse et nurse d'Osie.  ...  <a class="see_more" href="Nafein-Purification-r1841.html"">Lire la suite >>></a><div style="clear:both">&nbsp;</div></blockquote></div></div>
-<div class="arbo_lune_lien" onclick="open_div('div_11_2')">Lune d'Agilité&nbsp;[6]</div>
-<div class="arbo_lune" id="div_11_2"><div class="arbo_decade_lien" onclick="open_div('div_11_2_1')">Décade du Tigre&nbsp;[2]</div>
-<div class="arbo_decade" id="div_11_2_1"><label onMouseover="return overlib('10 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 1 :&nbsp;</label><label onMouseover="return overlib('11 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 2 :&nbsp;</label><label onMouseover="return overlib('12 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 3 :&nbsp;</label><label onMouseover="return overlib('13 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 4 :&nbsp;</label><label onMouseover="return overlib('14 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 5 :&nbsp;</label><label onMouseover="return overlib('15 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 6 :&nbsp;</label><label onMouseover="return overlib('16 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 7 :&nbsp;</label><label onMouseover="return overlib('17 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 8 :&nbsp;</label><label onMouseover="return overlib('18 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 9 :&nbsp;</label><span onclick="open_div('div_11_2_1_9_r_1845')" class="non_officiel">[Jerika] {Jerika} Allégence</span>
-<blockquote class="arbo_event" id="div_11_2_1_9_r_1845" name="div_11_2_1_9_r_1845"> L'étreinte est dure, froide, cruelle.  L'armure d'Ezul lui broie les chairs, alors qu'elle plonge les yeux dans son regard malsain.  La main droite du Chevalier est plaquée sur sa nuque, le bras gauche la tient plaquée contre lui, aucune issue possible. <br>  <br> Un fin sourire éti     ...  <a class="see_more" href="Jerika-{Jerika}-Allegence-r1845.html"">Lire la suite >>></a><div style="clear:both">&nbsp;</div></blockquote><label onMouseover="return overlib('19 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 10 :&nbsp;</label><span onclick="open_div('div_11_2_1_10_r_1846')" class="non_officiel">[Nafein] Malédiction</span>
-<blockquote class="arbo_event" id="div_11_2_1_10_r_1846" name="div_11_2_1_10_r_1846"> Certaine personnes je penses sont vouées a une malédiction, la mienne est celle de ne jamais garder une femme.  <br>  <br> Mishun, mon premier amour, qui jouais avec moi comme un chat joue avec une souris, papillionant entre Arthor et moi et me saignant le coeur à petit feu. Des cha  ...  <a class="see_more" href="Nafein-Malediction-r1846.html"">Lire la suite >>></a><div style="clear:both">&nbsp;</div></blockquote></div><div class="arbo_decade_lien" onclick="open_div('div_11_2_2')">Décade du Singe&nbsp;[2]</div>
-<div class="arbo_decade" id="div_11_2_2"><label onMouseover="return overlib('20 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 1 :&nbsp;</label><label onMouseover="return overlib('21 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 2 :&nbsp;</label><label onMouseover="return overlib('22 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 3 :&nbsp;</label><label onMouseover="return overlib('23 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 4 :&nbsp;</label><label onMouseover="return overlib('24 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 5 :&nbsp;</label><label onMouseover="return overlib('25 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 6 :&nbsp;</label><label onMouseover="return overlib('26 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 7 :&nbsp;</label><label onMouseover="return overlib('27 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 8 :&nbsp;</label><label onMouseover="return overlib('28 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 9 :&nbsp;</label><span onclick="open_div('div_11_2_2_9_r_1847')" class="non_officiel">[Kulgaan] Sombre.</span>
-<blockquote class="arbo_event" id="div_11_2_2_9_r_1847" name="div_11_2_2_9_r_1847"> &quot; Ils arrivent , Tenez votre ligne ! Pour la gloire D'Arathor ! &quot; <br>  <br> J'aurais du savoir que quelque chose n'allait pas... Les eclaireurs m'on dit 3000 elfes. J'en compte 100...  <br>  <br> &quot; Les fils des dieux ! <br>  Aujourd'hui nous mourrons ! &quot; <br>  <br> Mourir , contre 100 Elfes de sang ?  ...  <a class="see_more" href="Kulgaan-Sombre_-r1847.html"">Lire la suite >>></a><div style="clear:both">&nbsp;</div></blockquote><span onclick="open_div('div_11_2_2_9_r_1848')" class="non_officiel">[Jerika] {Jerika} Flou</span>
-<blockquote class="arbo_event" id="div_11_2_2_9_r_1848" name="div_11_2_2_9_r_1848"> Flou.  Tout devient embrumé.  Des visages dansent devant mes yeux sans que je puisse y coller des noms.  Bien sûr ça me revient, après un moment de frustration.  Mais même la frustration perd de sa signification... <br>  <br> Le glyphe sur ma peau est mon unique préoccupation, désor  ...  <a class="see_more" href="Jerika-{Jerika}-Flou-r1848.html"">Lire la suite >>></a><div style="clear:both">&nbsp;</div></blockquote><label onMouseover="return overlib('29 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 10 :&nbsp;</label></div><div class="arbo_decade_lien" onclick="open_div('div_11_2_3')">Décade du Faucon&nbsp;[2]</div>
-<div class="arbo_decade" id="div_11_2_3"><label onMouseover="return overlib('30 Septembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 1 :&nbsp;</label><label onMouseover="return overlib('01 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 2 :&nbsp;</label><span onclick="open_div('div_11_2_3_2_r_1849')" class="non_officiel">[Kulgaan] Ultimatum</span>
-<blockquote class="arbo_event" id="div_11_2_3_2_r_1849" name="div_11_2_3_2_r_1849">  <br> &quot;Voyez ceci , je vois mon père. <br> Voyez ceci , je vois ma mère et mes freres. <br> Voyez ceci , je vois mes ancetres qui sont pres de moi et me regardent&quot; <br>  <br> L'air frais D'Arathi... Le visage de mon amour , encore une fois, perdu... <br> La Taverne des Lorranistes.. Srederick... <br>      ...  <a class="see_more" href="Kulgaan-Ultimatum-r1849.html"">Lire la suite >>></a><div style="clear:both">&nbsp;</div></blockquote><label onMouseover="return overlib('02 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 3 :&nbsp;</label><span onclick="open_div('div_11_2_3_3_r_1850')" class="non_officiel">[Jerika] {Jerika} Ténèbres</span>
-<blockquote class="arbo_event" id="div_11_2_3_3_r_1850" name="div_11_2_3_3_r_1850"> Plus rien de stable.  L'esprit s'embrouille, les visions défilent à un rythme fou.  Un moment de lucidité suit de longues minutes de délire.  La rôdeuse change de sujet toutes les cinq secondes, puis reste elle-même pendant de longues heures.  La seule chose qui reste consta  ...  <a class="see_more" href="Jerika-{Jerika}-Tenebres-r1850.html"">Lire la suite >>></a><div style="clear:both">&nbsp;</div></blockquote><label onMouseover="return overlib('03 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 4 :&nbsp;</label><label onMouseover="return overlib('04 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 5 :&nbsp;</label><label onMouseover="return overlib('05 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 6 :&nbsp;</label><label onMouseover="return overlib('06 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 7 :&nbsp;</label><label onMouseover="return overlib('07 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 8 :&nbsp;</label><label onMouseover="return overlib('08 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 9 :&nbsp;</label><label onMouseover="return overlib('09 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 10 :&nbsp;</label></div></div>
-<div class="arbo_lune_lien" onclick="open_div('div_11_3')">Lune de l'Esprit&nbsp;[5]</div>
-<div class="arbo_lune" id="div_11_3"><div class="arbo_decade_lien" onclick="open_div('div_11_3_1')">Décade de la Chouette&nbsp;[1]</div>
-<div class="arbo_decade" id="div_11_3_1"><label onMouseover="return overlib('10 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 1 :&nbsp;</label><label onMouseover="return overlib('11 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 2 :&nbsp;</label><span onclick="open_div('div_11_3_1_2_r_1851')" class="non_officiel">[Nafein] Follie douce</span>
-<blockquote class="arbo_event" id="div_11_3_1_2_r_1851" name="div_11_3_1_2_r_1851"> Sans cesse les images se retournent dans sa tête, elle s'assemblent se superpose se confondent s'amalgame pour former un immense tableau...Celui de la follie.  <br>  <br> Cela fait quelques heures qu'il a enterer les rest des Jerika, reste est un grand mot son tronc et sa tete, les     ...  <a class="see_more" href="Nafein-Follie-douce-r1851.html"">Lire la suite >>></a><div style="clear:both">&nbsp;</div></blockquote><label onMouseover="return overlib('12 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 3 :&nbsp;</label><label onMouseover="return overlib('13 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 4 :&nbsp;</label><label onMouseover="return overlib('14 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 5 :&nbsp;</label><label onMouseover="return overlib('15 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 6 :&nbsp;</label><label onMouseover="return overlib('16 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 7 :&nbsp;</label><label onMouseover="return overlib('17 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 8 :&nbsp;</label><label onMouseover="return overlib('18 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 9 :&nbsp;</label><label onMouseover="return overlib('19 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 10 :&nbsp;</label></div><div class="arbo_decade_lien" onclick="open_div('div_11_3_2')">Décade de la Baleine&nbsp;[4]</div>
-<div class="arbo_decade" id="div_11_3_2"><label onMouseover="return overlib('20 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 1 :&nbsp;</label><label onMouseover="return overlib('21 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 2 :&nbsp;</label><label onMouseover="return overlib('22 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 3 :&nbsp;</label><label onMouseover="return overlib('23 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 4 :&nbsp;</label><label onMouseover="return overlib('24 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 5 :&nbsp;</label><span onclick="open_div('div_11_3_2_5_r_1853')" class="non_officiel">[Galladar] Une journée de baston pas ordinaire</span>
-<blockquote class="arbo_event" id="div_11_3_2_5_r_1853" name="div_11_3_2_5_r_1853"> Quel belle journé que le 5ème jour de la Décade de la Baleine ma offerte aujourd'hui <br>  <br>   -1 Je me suis fais engeuler par le conservateur Ilhaleine parce que j'ai tué <b><font color="cyan">4</font></b> <b><font color="#EFEF00">jeunes sabre-de-nuit</font></b> et [b]<font color="cyan">7</font>              ...  <a class="see_more" href="Galladar-Une-journee-de-baston-pas-ordinaire-r1853.html"">Lire la suite >>></a><div style="clear:both">&nbsp;</div></blockquote><label onMouseover="return overlib('25 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 6 :&nbsp;</label><label onMouseover="return overlib('26 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 7 :&nbsp;</label><label onMouseover="return overlib('27 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 8 :&nbsp;</label><span onclick="open_div('div_11_3_2_8_r_1855')" class="non_officiel">[Delan] Naissance dans l'Ombre</span>
-<blockquote class="arbo_event" id="div_11_3_2_8_r_1855" name="div_11_3_2_8_r_1855"> Ikasha trouvait beau ce jeune homme qui avait débarquer au village depuis maintenant 2 jours. Il était élégant, musclé et surtout d'une incroyable beauté. Alors que Ikasha ramassait ses légumes dans le potager de son père, elle rêvait de pouvoir etre sur le cheval bai du jeu    ...  <a class="see_more" href="Delan-Naissance-dans-l_Ombre-r1855.html"">Lire la suite >>></a><div style="clear:both">&nbsp;</div></blockquote><label onMouseover="return overlib('28 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 9 :&nbsp;</label><span onclick="open_div('div_11_3_2_9_r_1856')" class="non_officiel">[Delan] Jeune vie</span>
-<blockquote class="arbo_event" id="div_11_3_2_9_r_1856" name="div_11_3_2_9_r_1856"> Delan tomba à terre, le dos en sang. Il était à présent âgé de 17 ans, son entraînement dans l'ordre des voleurs ne se passait pas totalement comme prévu. <br> -J'espère que se sera la dernière fois que je serai obligé de te fouetter, Delan. <br> -Oui, maître. <br> -Maintenant, vas! <br> De      ...  <a class="see_more" href="Delan-Jeune-vie-r1856.html"">Lire la suite >>></a><div style="clear:both">&nbsp;</div></blockquote><span onclick="open_div('div_11_3_2_9_r_1857')" class="non_officiel">[Galladar] Une lettre en attente</span>
-<blockquote class="arbo_event" id="div_11_3_2_9_r_1857" name="div_11_3_2_9_r_1857"> 9ème jour de la Décade de la Baleine . Jétais assis sur un tronc d'arbre confortablement <font color="red"><b><i>Aïe</i></b>!</font> (<font color="#EF88F8">Comment dire une tronc reste un tronc non?</font>)Je me reposait en machouillant une brindille d'herbe de mauvais goût quand la cho             ...  <a class="see_more" href="Galladar-Une-lettre-en-attente-r1857.html"">Lire la suite >>></a><div style="clear:both">&nbsp;</div></blockquote><label onMouseover="return overlib('29 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 10 :&nbsp;</label></div><div class="arbo_decade_lien" onclick="open_div('div_11_3_3')">Décade du Lapin</div>
-<div class="arbo_decade" id="div_11_3_3"><label onMouseover="return overlib('30 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 1 :&nbsp;</label><label onMouseover="return overlib('31 Octobre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 2 :&nbsp;</label><label onMouseover="return overlib('01 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 3 :&nbsp;</label><label onMouseover="return overlib('02 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 4 :&nbsp;</label><label onMouseover="return overlib('03 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 5 :&nbsp;</label><label onMouseover="return overlib('04 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 6 :&nbsp;</label><label onMouseover="return overlib('05 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 7 :&nbsp;</label><label onMouseover="return overlib('06 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 8 :&nbsp;</label><label onMouseover="return overlib('07 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 9 :&nbsp;</label><label onMouseover="return overlib('08 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 10 :&nbsp;</label><label onMouseover="return overlib('09 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 11 :&nbsp;</label><label onMouseover="return overlib('10 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 12 :&nbsp;</label></div></div>
-</div><script language="javascript">
-	document.getElementById('div_11').style.display='block';
-	document.getElementById('div_11_1').style.display='block';
-	document.getElementById('div_11_2').style.display='block';
-	document.getElementById('div_11_3').style.display='block';
-</script>
-
-			</div>
-		<div class="fenetre_bas">&nbsp;</div>
-	</div>
-
-			
-		</div> <!-- Fermeture du corps -->
-		<div id="page_bottom">&nbsp;</div>
-	</div><!-- Fermeture du conteneur -->
-
-</body>
-</html>

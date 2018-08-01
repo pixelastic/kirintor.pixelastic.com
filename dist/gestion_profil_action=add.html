@@ -1,0 +1,139 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Profil</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Flint Gorgefeu">
+	<link rel="stylesheet" href="Share/css/style.css" type="text/css">
+	<link rel="stylesheet" href="Share/css/interface.css" type="text/css">
+	<link rel="stylesheet" href="Share/css/overdiv.css" type="text/css">
+	<link rel="stylesheet" href="Share/css/barre_tools.css" type="text/css">
+	<link rel="stylesheet" href="Share/css/form.css" type="text/css">
+	<link rel="stylesheet" href="Share/css/admin.css" type="text/css">
+	<script src="Share/js/overlib.js" language="javascript"></script>
+	<script src="Share/js/open_menu.js" language="javascript"></script>
+	<script src="Share/js/date_picker.js" language="javascript"></script>
+	<script src="Share/js/tools.js" language="javascript"></script>
+	<!--[if IE]>
+		<link rel="stylesheet" href="Share/css/IE_only.css" type="text/css">   
+	<![endif]-->
+
+</head>
+<div id="overDiv"></div>
+<body>
+	<div id="conteneur">
+		<div id="banniere">
+			<a href="index.html" class="lien_logo">&nbsp;</a>
+						<span class="irl_date">
+			1er Août 2018			</span>
+			<span class="kt_date">
+			<b>3ème jour</b> de la Décade du Lapin ( Lune de l'Esprit ) - 			</span>
+			</div>
+		<div id="menu">
+			<div class="menu_haut">&nbsp;</div>
+						<a href="index.html">Accueil</a>
+			<div style="margin-top:3px">	
+			</div>
+			<span>Histoire</span>
+			<a href="events_filtre=officiel.html">Chronologie officielle</a>
+			<a href="events_filtre=a_venir.html">Programme à venir</a>
+			<br>
+			<span>Récits</span>
+			<a href="recits_filtre=officiel.html">Légendes de Kirin Tor</a>
+			<a href="view_persos_complete.html">Personnages</a>
+			<a href="view_persos.html">Célébrités</a>
+			<a href="guildes.html">Guildes</a>
+			<br>
+			<span>Outils</span>
+			<a href="view_page_page_id=3.html">Calendrier</a>
+			<a href="view_page_page_id=17.html">Calendrier Illustré</a>
+			<a href="view_page_page_id=6.html">Mod d'interface</a>
+      <br>
+			
+			<span>Informations</span>
+			<a href="view_page_page_id=9.html">Historiens</a>
+			<a href="view_page_page_id=8.html">FAQ</a>
+			<a href="view_page_page_id=11.html">Liens</a>
+			<a href="view_page_page_id=10.html">Crédits</a>
+			<br>
+
+							
+
+				
+			<div class="menu_bas">&nbsp;</div>
+		</div>
+
+		<div id="principal">
+						
+	
+	
+<div class="fenetre">			
+		<div class="fenetre_haut">Profil</div>
+		<div class="fenetre_corps">
+		
+	
+	<fieldset class="form_tab">
+		<form  enctype="multipart/form-data" name="form_gestion_users" action="./gestion_profil.php" method="post">			
+			
+			<div>
+				<label for="user_name">Nom *&nbsp;:</label>
+				<input name="user_name" type="text" value="" tabindex="1" class="input" size="25" maxlength="255" onMouseover="return overlib('Ce nom servira simplement à l\'identification. Vous n\'êtes pas obligé de mettre le nom d\'un personnage, vous créérez ensuite des fiches de personnages via ce compte.', CAPTION, 'Nom *');" onMouseOut="return nd()">
+								
+			</div>
+			
+
+			<div>
+				<label for="user_pass">Pass *&nbsp;:</label>
+				<input name="user_pass" type="password" value="" tabindex="2" class="input" size="25" maxlength="255" onMouseover="return overlib('Indiquez un mot de passe pour pouvoir vous identifier', CAPTION, 'Pass *');" onMouseOut="return nd()">
+								
+			</div>
+			
+
+			<div>
+				<label for="user_pass_confirm">Confirm. *&nbsp;:</label>
+				<input name="user_pass_confirm" type="password" value="" tabindex="3" class="input" size="25" maxlength="255" onMouseover="return overlib('Retapez votre mot de passe, pour éviter les fautes de frappe', CAPTION, 'Confirm. *');" onMouseOut="return nd()">
+								
+			</div>
+			
+<input name="user_pass_hidden" type="hidden" value="" id="user_pass_hidden">
+
+			<div>
+				<label for="user_email">Mail *&nbsp;:</label>
+				<input name="user_email" type="text" value="" tabindex="4" class="input" size="25" maxlength="255">
+								
+			</div>
+			
+
+			<div>
+				<input type="hidden" name="MAX_FILE_SIZE" value="999999999">
+				<label for="user_avatar">Avatar : </label>
+				<input name="user_avatar" type="file" value="" tabindex="5" class="input" size="35" maxlength="255" onMouseover="return overlib('Sélectionnez une image pour utiliser comme avatar sur le forum. Fichiers .jpg ou .png uniquement', CAPTION, 'Avatar');" onMouseOut="return nd()"><br>
+			</div>
+			
+<br/><img src="securimage_show.html"><br />
+			<div>
+				<label for="code">Copiez le texte ci-dessus&nbsp;:</label>
+				<input name="code" type="text" value="" tabindex="6" class="input" size="25" maxlength="255">
+								
+			</div>
+			
+<input name="action" type="hidden" value="add_post" id="action">
+
+				<div align="center" style="width:100%">
+					<input name="" type="submit" value="Valider" tabindex="7" class="button" style="float:none;">
+				</div>
+				
+</form></fieldset>			</div>
+		<div class="fenetre_bas">&nbsp;</div>
+	</div>
+
+			
+		</div> <!-- Fermeture du corps -->
+		<div id="page_bottom">&nbsp;</div>
+	</div><!-- Fermeture du conteneur -->
+
+</body>
+</html>
+
+
