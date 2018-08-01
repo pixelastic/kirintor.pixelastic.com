@@ -1,0 +1,16 @@
+{
+  "name": "kirintor.pixelastic.com",
+  "version": "1.0.0",
+  "description": "Backup of the wow.kirin.tor.free.fr website",
+  "main": "index.js",
+  "repository": "git@github.com:pixelastic/kirintor.pixelastic.com.git",
+  "author": "Pixelastic <tim@pixelastic.com>",
+  "license": "MIT",
+  "scripts": {
+    "serve": "./scripts/serve",
+    "deploy": "./scripts/deploy"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}
