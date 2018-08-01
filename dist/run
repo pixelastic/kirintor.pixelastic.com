@@ -4,12 +4,14 @@ require 'fileutils';
 Dir['./*.html'].each do |file|
   content = File.read(file)
 
-  content = content.gsub('Â%E2', 'a')
-  content = content.gsub('Â%3F', '?')
-  content = content.gsub('Â%85', '')
-  content = content.gsub('Â%92', '-')
-  content = content.gsub('Â%96', '-')
-  content = content.gsub('Â%9C', 'oe')
+  content = content.gsub('%E2', 'a')
+  content = content.gsub('%3F', '?')
+  content = content.gsub('%3B', ';')
+  content = content.gsub('%C4', 'A')
+  content = content.gsub('%85', '')
+  content = content.gsub('%92', '-')
+  content = content.gsub('%96', '-')
+  content = content.gsub('%9C', 'oe')
 
   File.write(file, content);
 end
