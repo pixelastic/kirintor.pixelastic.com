@@ -1,21 +1,22 @@
 #!/usr/bin/env ruby
-require 'fileutils';
+require 'fileutils'
 
-Dir['./*-r1696.html'].each do |file|
-  content = File.read(file)
+Dir['./*.html'].each do |file|
+  handle = File.open(file, 'rb')
+  content = handle.read
+  content = content.force_encoding('utf-8')
 
-  content = content.gsub('%E2', 'a')
-  content = content.gsub('%3F', '?')
-  content = content.gsub('%3B', ';')
-  content = content.gsub('%C4', 'A')
-  content = content.gsub('%85', '')
-  content = content.gsub('%92', '-')
-  content = content.gsub('%96', '-')
-  content = content.gsub('%9C', 'oe')
+  # content = content.gsub('%E2', 'a')
+  # content = content.gsub('%3F', '?')
+  # content = content.gsub('%3B', ';')
+  # content = content.gsub('%C4', 'A')
+  # content = content.gsub('%85', '')
+  # content = content.gsub('%92', '-')
+  # content = content.gsub('%96', '-')
+  # content = content.gsub('%9C', 'oe')
 
-  content = content.gsub('%u92', "&#039;")
-  
+  content = content.gsub("\u0092", '&#039;')
+  content = content.gsub("\u0085", '')
 
-  File.write(file, content);
+  File.write(file, content)
 end
-
