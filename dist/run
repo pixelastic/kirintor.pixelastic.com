@@ -11,12 +11,7 @@ Dir['./*.html'].each do |file|
   
   puts new_file if new_file['%']
 
-  FileUtils.move(file, new_file)
-    # .encode('utf-8')
-  # p file
-  # p file[13]
-  # puts file[13]
-  # p file.gsub(file[13], 'kjkj')
+  # FileUtils.move(file, new_file)
 
 end
 
