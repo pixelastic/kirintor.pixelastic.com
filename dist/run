@@ -1,11 +1,11 @@
 #!/usr/bin/env ruby
 require 'fileutils'
 
-Dir['./Loam-Recit-r1330.html'].each do |file|
+Dir['./*.html'].each do |file|
   content = File.read(file)
 
   new_content = content.gsub(%r{<a href="(.*)">Envoyer un MP</a>}, '')
-  new_content = content.gsub(/<img src="img_genea(.*)>/, '')
+  new_content = new_content.gsub(/<img src="img_genea(.*)>/, '')
 
   File.write(file, new_content)
 
