@@ -4,10 +4,14 @@ require 'fileutils';
 Dir['./*.html'].each do |file|
   next unless file['%']
   new_file = file.force_encoding('windows-1252').encode('utf-8')
+  new_file = new_file.gsub('Â%85', '')
   new_file = new_file.gsub('Â%92', '-')
-  p new_file
+  new_file = new_file.gsub('Â%96', '-')
+  new_file = new_file.gsub('Â%9C', 'oe')
+  
+  puts new_file if new_file['%']
 
-  # FileUtils.move(file, new_file)
+  FileUtils.move(file, new_file)
     # .encode('utf-8')
   # p file
   # p file[13]
