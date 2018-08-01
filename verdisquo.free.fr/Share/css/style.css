@@ -1,0 +1,253 @@
+@charset "iso-8859-1";
+
+body {
+	padding:0;
+	margin:0;
+	font : 10pt Arial;
+	color: #737373;
+	background : #152235;
+	text-align:center;
+	/* Couleurs des barres de défilement sous Internet Explorer */
+	scrollbar-face-color: #737373;
+	scrollbar-highlight-color: #737373;
+	scrollbar-shadow-color: #152235;
+	scrollbar-3dlight-color: #152235;
+	scrollbar-arrow-color:  #FFFFFF;
+	scrollbar-track-color: #152235;
+	scrollbar-darkshadow-color: #152235;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  position: relative;
+}
+h2 {
+	color: #b8860b;
+	font-variant: small-caps;
+	letter-spacing:1;
+	font-size:1.3em;
+	display:inline;
+}
+hr {
+	clear:both;
+	color:#737373;
+	size:1;
+}
+img {
+	border:0;
+}
+a {
+	text-decoration:none;
+	color: #B8860B;
+}
+a:hover {
+	color: #DAA520;	
+}
+/* UN lien pour éditer un event/recit. Au lieu de s'embeter avecd es float et des clear, on va le faire suffisemment large et aligné sur la doite */
+.lien_edit_chrono {
+	display:block;
+	width: 520;
+	text-align:right;
+	margin-right:10px;
+	font-weight:normal;
+}
+.lien_edit_chrono a {
+	font-weight:normal;
+}
+
+/* le texte en un peu plus petit */
+.petit {
+	font-size:10px;
+}
+
+
+
+/* Les couleurs si c'est officiel ou non, gris/blanc wowesque */
+.officiel {
+	color: #FFFFFF;
+	font-weight:bold;	
+}
+.non_officiel {
+	color:#787878;
+	font-weight:bold;
+}
+
+/* Le titre des rubriques en blanc page de gestion, d'admin */
+.petit_titre {
+	display:block;
+	margin-left:14px;
+	margin-right:18px;
+	text-indent:3px;
+	text-decoration:none;
+	font : 0.8em Arial;
+	color: #FFFFFF;
+}
+
+
+
+/* Le petit message qui m'indique que ma version du Chrono-Events est à jour ou non */
+.warning_out_of_date {
+	display:list-item;
+	list-style: url("../../images/invalid.jpg") inside;
+	font-size:0.9em;
+	color: red;
+}
+.warning_not_out_of_date {
+	display:list-item;
+	list-style: url("../../images/valid.jpg") inside;
+	font-size:0.9em;
+	color: lime;
+}
+
+/* Affiche des textes du guestbook */
+.mess_guestbook {
+	text-align:left;
+	width: 570Px;
+	margin-bottom:15px;
+}
+.mess_guestbook .edit {
+	float:right;
+	text-align:right;
+	display:block;
+	width:400px;
+}
+.mess_guestbook .date {
+	float:right;
+	display:block;
+	font-size:0.7em;
+}
+
+
+/* News */
+.img_news {
+	float:left;
+	margin-right:20px;
+	margin-bottom:10px;
+}
+.signature {
+	display:block;
+	float:right;
+	color: white;
+	margin-top:8px;
+}
+
+
+
+/* Arborescence des événements */
+.arbo_ere_lien {
+	cursor:pointer;
+	color: #CC6735;
+	font-weight:bold;
+	margin-top:10px;
+	clear:both;
+}
+.arbo_lune_lien {
+	cursor:pointer;
+	color:#EFEF00;
+	font-weight:bold;
+	clear:both;		
+}
+.arbo_decade_lien {
+	cursor:pointer;
+	color:#40BF40;
+	font-weight:bold;
+	clear:both;	
+}
+.nbr_events {
+	font-size: 0.8em;
+	color: #808080;
+	font-weight:normal;
+}
+.arbo_ere, .arbo_lune, .arbo_decade, .arbo_event {
+	margin-left:15px;
+	display:none;
+}
+.arbo_decade {
+	color: #CDA800;
+}
+.arbo_decade span {
+	cursor: pointer;
+	display:block;	
+	clear:both;
+	margin-left:2em;
+	font-weight:bold;	
+}
+.arbo_decade strong {
+	color:white;
+	font-size:0.8em;
+	font-weight:normal;
+	cursor:default;
+}
+.arbo_decade .officiel {
+	color: #FFFFFF;	
+}
+.arbo_decade .non_officiel {
+	color:#787878;
+}
+
+.arbo_decade label {
+	clear:both;
+	display:block;
+
+}
+
+.arbo_event {
+	color: #ADA588;
+	border: 1px solid #787878;
+	margin:0;
+	margin-left:-45px;
+	padding: 5px;
+	width:550px;
+}
+.arbo_event a.see_more {
+	display:block;
+	float:right;
+}
+
+
+/* La liste des persos sur le site */
+blockquote.liste_persos_site {
+	margin:0;
+	padding:0;
+	border:0;
+} 
+.liste_persos_site .img_avatar {
+	float:left;
+	display:block;
+	width:20;
+	height:18;
+}
+.liste_persos_site .nbr_points {
+	width:50px;
+	font-size:8pt;
+}
+.liste_persos_site .nbr_recits {
+	width:125px;
+	font-size:8pt;
+}
+.liste_persos_site .vote {
+	text-align:center;
+	width:75px;
+	font-size:8pt;
+}
+.liste_persos_site .vote a {
+	width:25px;
+	text-align:center;
+}
+.liste_persos_site .vote a:hover {
+	background: #4b4b4b;
+}
+.liste_persos_site a {
+	display:block;
+	width: 7em;
+}
+
+
+/* La liste des guildes */
+.liste_guildes a {
+	display:block;
+	width:300px;
+}
+.liste_guildes span {
+	font-size:10px;
+	
+}

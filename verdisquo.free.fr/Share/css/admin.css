@@ -1,0 +1,151 @@
+@charset "iso-8859-1";
+
+/* Liste des items dans l'admin de manière générale */
+.liste_admin {
+	clear:both;
+	width:585px;
+}
+.liste_admin label, .liste_admin a, .liste_admin span, .liste_admin blockquote {
+	display:block;
+	float:left;
+	margin-right:10px;
+}
+.liste_admin label {
+	text-align:right;
+}
+
+/* Liste des pages, un peu d'espace pour le numero, le lien et le début du texte */
+.liste_pages label {
+	width: 2em;
+}
+.liste_pages a {
+	width: 16em;
+}
+.liste_pages span {
+	font-size:0.7em;
+}
+
+/* LIste des profils des membres, avec le nombre de persos et la somme des récits */
+.liste_profils a {
+	width: 300px;
+}
+.liste_profils label {
+	width: 100px;
+}
+.liste_profils span {
+	width: 100px;
+}
+
+/* LIste des persos des membres, avec la petite image pour valider/dévalider et le nombre récits dans le span */
+.liste_persos label {
+	width: 100px;
+}
+.liste_persos span {
+	width: 300px;
+}
+
+/* Pour les récits, un espace pour la date, un grand pour le titre/lien et tout à droite l'auteur */
+.liste_recits label {
+	width:9em;
+	text-align:left;
+}
+.liste_recits a {
+	width:300px;
+}
+.liste_recits span {
+	font-size:0.7em;
+	text-align:right;
+	display:block;
+	width:100px;
+	padding-right:10px;
+}
+/* Pour les news, petit espace pour l'id, grand pour le lien et apercu du début de la news */
+.liste_news label {
+	width:20px;
+}
+.liste_news a {
+	float:left;
+	width:330px;
+}
+.liste_news span {
+	float:left;
+	font-size:0.7em;
+	
+}
+/* Pour les events, un peu de place pour les images, la date, le lien, puis la faction */
+.liste_events .img_valid {
+	width: 25px;
+}
+.liste_events .img_valid a {
+	float:left;
+	display:inline;
+	margin:0;
+	width:20px;
+}
+.liste_events .img_valid img {
+	width:20px;
+	height:20px;
+}
+.liste_events label {
+	width:100px;
+	text-align:center;
+	margin-right:10px;
+	font-size:10px;
+}
+.liste_events a {
+	width: 50%;
+}
+.liste_events span {
+	text-align:center;
+}
+.liste_events .events_faction {
+	float:right;
+	font-size:10px;
+	
+}
+
+/* Pour la liste des membres avec des images,juste un petit espace pour marquer combien il a de photos */
+.liste_gallery label {
+	width:7em;
+}
+.liste_gallery a {
+	width:29em;
+}
+
+/* Dans la page d'admin d'un compte ou d'un perso, le div et le lien de ses récits */
+.admin_view_recits {
+	font-weight:bold;
+	color: #4b4b4b;
+	cursor:pointer;
+}
+.admin_view_recits_hidden {
+	display:none;
+	padding-left: 15px;
+		font-size:8pt;
+}
+.admin_view_recits_hidden label {
+	display:block;
+	float:left;
+	width:100px;
+	text-align:right;
+	clear:both;
+	margin-right:15px;
+}
+.admin_view_recits_hidden a:hover {
+	background:#323232;
+}
+.admin_view_recits_search span {
+	display:block;
+	float:left;
+	width:125px;
+	font-size:8pt;
+}
+.admin_view_recits_search label {
+	display:block;
+	float:left;
+	width:100px;
+	font-size:8pt;
+}
+
+
+

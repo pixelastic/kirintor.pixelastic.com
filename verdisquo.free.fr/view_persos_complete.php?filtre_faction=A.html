@@ -1,0 +1,1424 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Les Terres de Kirin Tor</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Flint Gorgefeu">
+	<link rel="stylesheet" href="Share/css/style.css" type="text/css">
+	<link rel="stylesheet" href="Share/css/interface.css" type="text/css">
+	<link rel="stylesheet" href="Share/css/overdiv.css" type="text/css">
+	<link rel="stylesheet" href="Share/css/barre_tools.css" type="text/css">
+	<link rel="stylesheet" href="Share/css/form.css" type="text/css">
+	<link rel="stylesheet" href="Share/css/admin.css" type="text/css">
+	<script src="Share/js/overlib.js" language="javascript"></script>
+	<script src="Share/js/open_menu.js" language="javascript"></script>
+	<script src="Share/js/date_picker.js" language="javascript"></script>
+	<script src="Share/js/tools.js" language="javascript"></script>
+	<!--[if IE]>
+		<link rel="stylesheet" href="Share/css/IE_only.css" type="text/css">   
+	<![endif]-->
+
+</head>
+<div id="overDiv"></div>
+<body>
+	<div id="conteneur">
+		<div id="banniere">
+			<a href="index.php.html" class="lien_logo">&nbsp;</a>
+						<span class="irl_date">
+			1er Août 2018			</span>
+			<span class="kt_date">
+			<b>3ème jour</b> de la Décade du Lapin ( Lune de l'Esprit ) - 			</span>
+			</div>
+		<div id="menu">
+			<div class="menu_haut">&nbsp;</div>
+						<a href="index.php.html">Accueil</a>
+			<div style="margin-top:3px">	
+			</div>
+			<span>Histoire</span>
+			<a href="events.php%3Ffiltre=officiel.html">Chronologie officielle</a>
+			<a href="events.php%3Ffiltre=a_venir.html">Programme à venir</a>
+			<br>
+			<span>Récits</span>
+			<a href="recits.php%3Ffiltre=officiel.html">Légendes de Kirin Tor</a>
+			<a href="view_persos_complete.php.html">Personnages</a>
+			<a href="view_persos.php.html">Célébrités</a>
+			<a href="guildes.php.html">Guildes</a>
+			<br>
+			<span>Outils</span>
+			<a href="view_page.php%3Fpage_id=3.html">Calendrier</a>
+			<a href="view_page.php%3Fpage_id=17.html">Calendrier Illustré</a>
+			<a href="view_page.php%3Fpage_id=6.html">Mod d'interface</a>
+      <br>
+			
+			<span>Informations</span>
+			<a href="view_page.php%3Fpage_id=9.html">Historiens</a>
+			<a href="view_page.php%3Fpage_id=8.html">FAQ</a>
+			<a href="view_page.php%3Fpage_id=11.html">Liens</a>
+			<a href="view_page.php%3Fpage_id=10.html">Crédits</a>
+			<br>
+
+							
+
+				
+			<div class="menu_bas">&nbsp;</div>
+		</div>
+
+		<div id="principal">
+						
+	
+	
+<div class="event_swap_faction">
+		<a href="view_persos_complete.php%3Ffiltre_faction=H.html" class="horde" >&nbsp;</a>
+	<a href="view_persos_complete.php%3Ffiltre_faction=A.html" class="alliance" style="background-image: url(images/interface/faction_alliance_link.jpg)" >&nbsp;</a>
+	<a href="view_persos_complete.php%3Ffiltre_faction=.html" class="both" >&nbsp;</a>
+</div>
+<div class="fenetre">			
+		<div class="fenetre_haut">Les Terres de Kirin Tor</div>
+		<div class="fenetre_corps">
+		
+<script language="javascript">
+	//Le texte et l'effet du bouton varie en fonction de la valeur recit_what_to_do
+	var recit_what_to_do = 'none';
+	
+	function update_what_to_do() {
+		var but = document.getElementById('view_hide');
+		if (recit_what_to_do=="none") {
+			but.value = "Afficher tous les personnages";
+			recit_what_to_do = 'block';
+		}
+		else {
+			but.value = "Masquer les personnages qui n'ont pas de récits";
+			recit_what_to_do = 'none';
+		}
+		
+	}
+</script>
+<br><br>
+	<div class="liste_admin">
+		<div class="liste_persos_site">
+			<span class="img_mp">&nbsp;</span>
+			<span class="img_avatar">&nbsp;</span>
+			<a>&nbsp;</a>
+			<span class="nbr_recits">Récits</span>
+			<span class="nbr_points">Points</span>
+			<span class="vote">Vote</span>
+		</div>
+	</div>
+	<br><br>
+
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="http://verdisquo.free.fr/_Pile_ou_face_.html" onMouseOver="overlib('<img src=images/perso/503_Pileouface.jpg>')" onMouseOut="return nd();">"Pile ou face"</a>
+			<span class="nbr_recits">1 récits&nbsp;</span>
+			<span class="nbr_points">8 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Abyshal.html" >Abyshal</a>
+			<span class="nbr_recits">4 récits&nbsp;</span>
+			<span class="nbr_points">7 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Adrie.html" onMouseOver="overlib('<img src=images/perso/085_Adrie.jpg>')" onMouseOut="return nd();">Adrie</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">1 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Aemilia.html" >Aemilia</a>
+			<span class="nbr_recits">1 récits&nbsp;</span>
+			<span class="nbr_points">1 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Aesis.html" >Aesis</a>
+			<span class="nbr_recits">1 récits&nbsp;</span>
+			<span class="nbr_points">1 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Aedelagen.html" onMouseOver="overlib('<img src=images/perso/064_Aedelagen.jpg>')" onMouseOut="return nd();">Aëdelagen</a>
+			<span class="nbr_recits">3 récits&nbsp;</span>
+			<span class="nbr_points">2 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Aerwen.html" onMouseOver="overlib('<img src=images/perso/039_Aerwen.jpg>')" onMouseOut="return nd();">Aërwen</a>
+			<span class="nbr_recits">8 récits&nbsp;</span>
+			<span class="nbr_points">10 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Agravedh.html" >Agravedh</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Akazan.html" onMouseOver="overlib('<img src=images/perso/344_Akazan.jpg>')" onMouseOut="return nd();">Akazan</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">1 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Alatarielle.html" >Alatarielle</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Alathorn.html" onMouseOver="overlib('<img src=images/perso/268_.jpg>')" onMouseOut="return nd();">Alathorn</a>
+			<span class="nbr_recits">5 récits&nbsp;</span>
+			<span class="nbr_points">5 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Alberie.html" onMouseOver="overlib('<img src=images/perso/625_Alberie.jpg>')" onMouseOut="return nd();">Alberie</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">2 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Alberie.html" onMouseOver="overlib('<img src=images/perso/620_Alberie.jpg>')" onMouseOut="return nd();">Albérie</a>
+			<span class="nbr_recits">1 récits&nbsp;</span>
+			<span class="nbr_points">1 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Aldherianne.html" onMouseOver="overlib('<img src=images/perso/451_Aldherianne.jpg>')" onMouseOut="return nd();">Aldherianne</a>
+			<span class="nbr_recits">4 récits&nbsp;</span>
+			<span class="nbr_points">6 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Alduyn.html" onMouseOver="overlib('<img src=images/perso/499_Alduyn.jpg>')" onMouseOut="return nd();">Aldüyn</a>
+			<span class="nbr_recits">1 récits&nbsp;</span>
+			<span class="nbr_points">-1 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="ALIORK.html" >ALIORK</a>
+			<span class="nbr_recits">6 récits&nbsp;</span>
+			<span class="nbr_points">2 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Allany.html" >Allany</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Alriendul.html" onMouseOver="overlib('<img src=images/perso/239_Alriendul.jpg>')" onMouseOut="return nd();">Alriendul</a>
+			<span class="nbr_recits">2 récits&nbsp;</span>
+			<span class="nbr_points">3 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Alyra.html" onMouseOver="overlib('<img src=images/perso/390_Alyra.jpg>')" onMouseOut="return nd();">Alyra</a>
+			<span class="nbr_recits">15 récits&nbsp;</span>
+			<span class="nbr_points">11 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Alyssa.html" onMouseOver="overlib('<img src=images/perso/022_Alyssa.jpg>')" onMouseOut="return nd();">Alyssa</a>
+			<span class="nbr_recits">1 récits&nbsp;</span>
+			<span class="nbr_points">7 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Amelie.html" >Amelie</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">1 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Amlor.html" >Amlor</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Ancalhime.html" >Ancalhimë</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Ancorion.html" onMouseOver="overlib('<img src=images/perso/302_Ancorion.jpg>')" onMouseOut="return nd();">Ancorion</a>
+			<span class="nbr_recits">3 récits&nbsp;</span>
+			<span class="nbr_points">3 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Angelle.html" onMouseOver="overlib('<img src=images/perso/480_Angelle.jpg>')" onMouseOut="return nd();">Angèlle</a>
+			<span class="nbr_recits">3 récits&nbsp;</span>
+			<span class="nbr_points">11 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Anissyj.html" onMouseOver="overlib('<img src=images/perso/003_Anissyj.jpg>')" onMouseOut="return nd();">Anissyj</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">2 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Anndoras.html" >Anndoras</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">1 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Anzural.html" onMouseOver="overlib('<img src=images/perso/114_Anzural.jpg>')" onMouseOut="return nd();">Anzural</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Arcanestra.html" onMouseOver="overlib('<img src=images/perso/279_Arcanestra.jpg>')" onMouseOut="return nd();">Arcanestra</a>
+			<span class="nbr_recits">2 récits&nbsp;</span>
+			<span class="nbr_points">3 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Archelion.html" >Archelion</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">3 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Argrima.html" onMouseOver="overlib('<img src=images/perso/389_Argrima.jpg>')" onMouseOut="return nd();">Argrima</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">5 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Arhan.html" >Arhan</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Arkhayn.html" onMouseOver="overlib('<img src=images/perso/172_Arkhayn.jpg>')" onMouseOut="return nd();">Arkhayn</a>
+			<span class="nbr_recits">2 récits&nbsp;</span>
+			<span class="nbr_points">4 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Arowan.html" onMouseOver="overlib('<img src=images/perso/327_Arowan.jpg>')" onMouseOut="return nd();">Arowän</a>
+			<span class="nbr_recits">1 récits&nbsp;</span>
+			<span class="nbr_points">6 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Arthemya.html" onMouseOver="overlib('<img src=images/perso/621_Arthemya.jpg>')" onMouseOut="return nd();">Arthemya</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Arthemis.html" onMouseOver="overlib('<img src=images/perso/463_Arthemis.jpg>')" onMouseOut="return nd();">Arthémìs</a>
+			<span class="nbr_recits">1 récits&nbsp;</span>
+			<span class="nbr_points">11 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Aspario.html" onMouseOver="overlib('<img src=images/perso/518_Aspario.jpg>')" onMouseOut="return nd();">Aspario</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">1 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Astaethien.html" onMouseOver="overlib('<img src=images/perso/306_Astaethien.jpg>')" onMouseOut="return nd();">Astaethïen</a>
+			<span class="nbr_recits">8 récits&nbsp;</span>
+			<span class="nbr_points">5 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Atanamir.html" >Atanamir</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Athalia.html" onMouseOver="overlib('<img src=images/perso/214_Athalia.jpg>')" onMouseOut="return nd();">Athalia</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Athelnor.html" >Athelnor</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Athorim.html" >Athorim</a>
+			<span class="nbr_recits">2 récits&nbsp;</span>
+			<span class="nbr_points">1 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Athos_Darek.html" >Athos Darek</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Avelornfeld.html" >Avelornfeld</a>
+			<span class="nbr_recits">3 récits&nbsp;</span>
+			<span class="nbr_points">1 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Averell.html" onMouseOver="overlib('<img src=images/perso/180_Averell.jpg>')" onMouseOut="return nd();">Averell</a>
+			<span class="nbr_recits">21 récits&nbsp;</span>
+			<span class="nbr_points">3 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Axael.html" >Axael</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Azcharra.html" >Azcharra</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">-5 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Baalshath.html" >Baalshath</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Bahaal.html" >Bahaal</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">1 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Bahall.html" >Bahall</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Balboa.html" onMouseOver="overlib('<img src=images/perso/535_balboa.jpg>')" onMouseOut="return nd();">balboa</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Balmon.html" onMouseOver="overlib('<img src=images/perso/412_Balmon.jpg>')" onMouseOut="return nd();">Balmon</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">8 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Benlabaff.html" >Benlabaff</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Blasius.html" onMouseOver="overlib('<img src=images/perso/196_Blasius.jpg>')" onMouseOut="return nd();">Blasius</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">-4 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Bloinr.html" >Bloïnr</a>
+			<span class="nbr_recits">2 récits&nbsp;</span>
+			<span class="nbr_points">1 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Borthak.html" >Borthak</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Bosbi.html" onMouseOver="overlib('<img src=images/perso/553_bosbi.jpg>')" onMouseOut="return nd();">bosbi</a>
+			<span class="nbr_recits">1 récits&nbsp;</span>
+			<span class="nbr_points">-2 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Boumsec.html" >boumsec</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Braindille.html" >Braindille</a>
+			<span class="nbr_recits">8 récits&nbsp;</span>
+			<span class="nbr_points">1 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Brice.html" >brice</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Brook.html" onMouseOver="overlib('<img src=images/perso/629_brook.jpg>')" onMouseOut="return nd();">brook</a>
+			<span class="nbr_recits">1 récits&nbsp;</span>
+			<span class="nbr_points">1 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Brynhild.html" onMouseOver="overlib('<img src=images/perso/380_Brynhild.jpg>')" onMouseOut="return nd();">Brynhild</a>
+			<span class="nbr_recits">3 récits&nbsp;</span>
+			<span class="nbr_points">8 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Bunny71.html" >Bunny71</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Cairistiona.html" >Cairistiona</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Caitlyn.html" onMouseOver="overlib('<img src=images/perso/517_Caitlyn_O__Karael.jpg>')" onMouseOut="return nd();">Caitlyn</a>
+			<span class="nbr_recits">3 récits&nbsp;</span>
+			<span class="nbr_points">2 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Camylle.html" onMouseOver="overlib('<img src=images/perso/392_Camylle.jpg>')" onMouseOut="return nd();">Camylle</a>
+			<span class="nbr_recits">1 récits&nbsp;</span>
+			<span class="nbr_points">3 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Canon.html" >Canon</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Celryndel.html" onMouseOver="overlib('<img src=images/perso/431_Celryndel.jpg>')" onMouseOut="return nd();">Celryndel</a>
+			<span class="nbr_recits">1 récits&nbsp;</span>
+			<span class="nbr_points">4 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Cenehdra.html" >Cenehdra</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Cerena.html" onMouseOver="overlib('<img src=images/perso/043_Cerena.jpg>')" onMouseOut="return nd();">Cerena</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Cevi.html" onMouseOver="overlib('<img src=images/perso/351_Cevi.jpg>')" onMouseOut="return nd();">Cevi</a>
+			<span class="nbr_recits">10 récits&nbsp;</span>
+			<span class="nbr_points">4 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Chastedy.html" >Chastedy</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Chastity.html" >Chastity</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Cheena.html" onMouseOver="overlib('<img src=images/perso/230_Cheena.jpg>')" onMouseOut="return nd();">Cheena</a>
+			<span class="nbr_recits">56 récits&nbsp;</span>
+			<span class="nbr_points">14 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Cherrylinoa.html" onMouseOver="overlib('<img src=images/perso/247_Cherrylinoa.jpg>')" onMouseOut="return nd();">Cherrylinoa</a>
+			<span class="nbr_recits">8 récits&nbsp;</span>
+			<span class="nbr_points">6 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Chiron.html" onMouseOver="overlib('<img src=images/perso/282_Chiron.jpg>')" onMouseOut="return nd();">Chiron</a>
+			<span class="nbr_recits">23 récits&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Chrysael.html" >Chrysaël</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Ciae.html" onMouseOver="overlib('<img src=images/perso/557_Ciae.jpg>')" onMouseOut="return nd();">Ciae</a>
+			<span class="nbr_recits">2 récits&nbsp;</span>
+			<span class="nbr_points">-7 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Cinitia.html" >Cinitia</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Clemanas.html" onMouseOver="overlib('<img src=images/perso/080_Clemanas.jpg>')" onMouseOut="return nd();">Clemanas</a>
+			<span class="nbr_recits">3 récits&nbsp;</span>
+			<span class="nbr_points">6 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Clemus.html" >Clemus</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Clothilde.html" >Clothilde</a>
+			<span class="nbr_recits">9 récits&nbsp;</span>
+			<span class="nbr_points">2 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Conservateur.html" onMouseOver="overlib('<img src=images/perso/607_Conservateur.jpg>')" onMouseOut="return nd();">Conservateur</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">1 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Corzeeus.html" onMouseOver="overlib('<img src=images/perso/383_Corzeeus.jpg>')" onMouseOut="return nd();">Corzeeus</a>
+			<span class="nbr_recits">3 récits&nbsp;</span>
+			<span class="nbr_points">3 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="CrileLoup.html" onMouseOver="overlib('<img src=images/perso/189_CrileLoup.jpg>')" onMouseOut="return nd();">CrileLoup</a>
+			<span class="nbr_recits">8 récits&nbsp;</span>
+			<span class="nbr_points">12 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Crom.html" >Crom</a>
+			<span class="nbr_recits">3 récits&nbsp;</span>
+			<span class="nbr_points">1 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Cymbeline.html" onMouseOver="overlib('<img src=images/perso/269_Cymbeline.jpg>')" onMouseOut="return nd();">Cymbelîne</a>
+			<span class="nbr_recits">72 récits&nbsp;</span>
+			<span class="nbr_points">44 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Cyraneau.html" onMouseOver="overlib('<img src=images/perso/509_Cyraneau.jpg>')" onMouseOut="return nd();">Cyraneau</a>
+			<span class="nbr_recits">3 récits&nbsp;</span>
+			<span class="nbr_points">21 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Daenn.html" onMouseOver="overlib('<img src=images/perso/507_Daenn.jpg>')" onMouseOut="return nd();">Daenn</a>
+			<span class="nbr_recits">3 récits&nbsp;</span>
+			<span class="nbr_points">3 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Daexian.html" >Daexian</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Dagarod.html" onMouseOver="overlib('<img src=images/perso/377_Dagarod.jpg>')" onMouseOut="return nd();">Dagarod</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">1 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Dagona.html" >Dagona</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<div class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="DaKatarn.html" onMouseOver="overlib('<img src=images/perso/424_DaKatarn.jpg>')" onMouseOut="return nd();">DaKatarn</a>
+			<span class="nbr_recits">1 récits&nbsp;</span>
+			<span class="nbr_points">3 pts</span>
+			<span class="vote">
+							</span>
+			
+			</div>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Darkane.html" >Darkane</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Darkleaf.html" >Darkleaf</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Darksoul.html" >Darksoul</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Darn.html" >Darn</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Darthadonis.html" >Darthadonis</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">0 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"><img src="images/interface/puce.jpg"></span>
+			<a href="Deemer.html" onMouseOver="overlib('<img src=images/perso/372_Deemer.jpg>')" onMouseOut="return nd();">Deemer</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">1 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+		<div class="liste_admin">
+		<blockquote class="liste_persos_site">
+			<!-- <span class="img_mp"><img src="images/interface/puce_mp.jpg"></span> -->
+			<span class="img_avatar"></span>
+			<a href="Delagoth.html" >Delagoth</a>
+			<span class="nbr_recits">&nbsp;</span>
+			<span class="nbr_points">7 pts</span>
+			<span class="vote">
+							</span>
+			
+			</blockquote>
+		</div>
+		
+<script language="javascript">
+	view_hide_no_recit(recit_what_to_do);
+</script>
+<br><br>
+<div align="center" style="clear:both">1&nbsp;<a href="view_persos_complete.php%3Ffiltre_faction=A&amp;display_start=100.html">2&nbsp;</a><a href="view_persos_complete.php%3Ffiltre_faction=A&amp;display_start=200.html">3&nbsp;</a><a href="view_persos_complete.php%3Ffiltre_faction=A&amp;display_start=300.html">4&nbsp;</a><a href="view_persos_complete.php%3Ffiltre_faction=A&amp;display_start=400.html">5&nbsp;</a><a href="view_persos_complete.php%3Ffiltre_faction=A&amp;display_start=100.html">Suivante >>></a>&nbsp;</div>			</div>
+		<div class="fenetre_bas">&nbsp;</div>
+	</div>
+
+			
+		</div> <!-- Fermeture du corps -->
+		<div id="page_bottom">&nbsp;</div>
+	</div><!-- Fermeture du conteneur -->
+
+</body>
+</html>

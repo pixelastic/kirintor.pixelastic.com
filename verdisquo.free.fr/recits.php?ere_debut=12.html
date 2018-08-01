@@ -1,0 +1,121 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Les Terres de Kirin Tor</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Flint Gorgefeu">
+	<link rel="stylesheet" href="Share/css/style.css" type="text/css">
+	<link rel="stylesheet" href="Share/css/interface.css" type="text/css">
+	<link rel="stylesheet" href="Share/css/overdiv.css" type="text/css">
+	<link rel="stylesheet" href="Share/css/barre_tools.css" type="text/css">
+	<link rel="stylesheet" href="Share/css/form.css" type="text/css">
+	<link rel="stylesheet" href="Share/css/admin.css" type="text/css">
+	<script src="Share/js/overlib.js" language="javascript"></script>
+	<script src="Share/js/open_menu.js" language="javascript"></script>
+	<script src="Share/js/date_picker.js" language="javascript"></script>
+	<script src="Share/js/tools.js" language="javascript"></script>
+	<!--[if IE]>
+		<link rel="stylesheet" href="Share/css/IE_only.css" type="text/css">   
+	<![endif]-->
+
+</head>
+<div id="overDiv"></div>
+<body>
+	<div id="conteneur">
+		<div id="banniere">
+			<a href="index.php.html" class="lien_logo">&nbsp;</a>
+						<span class="irl_date">
+			1er Août 2018			</span>
+			<span class="kt_date">
+			<b>3ème jour</b> de la Décade du Lapin ( Lune de l'Esprit ) - 			</span>
+			</div>
+		<div id="menu">
+			<div class="menu_haut">&nbsp;</div>
+						<a href="index.php.html">Accueil</a>
+			<div style="margin-top:3px">	
+			</div>
+			<span>Histoire</span>
+			<a href="events.php%3Ffiltre=officiel.html">Chronologie officielle</a>
+			<a href="events.php%3Ffiltre=a_venir.html">Programme à venir</a>
+			<br>
+			<span>Récits</span>
+			<a href="recits.php%3Ffiltre=officiel.html">Légendes de Kirin Tor</a>
+			<a href="view_persos_complete.php.html">Personnages</a>
+			<a href="view_persos.php.html">Célébrités</a>
+			<a href="guildes.php.html">Guildes</a>
+			<br>
+			<span>Outils</span>
+			<a href="view_page.php%3Fpage_id=3.html">Calendrier</a>
+			<a href="view_page.php%3Fpage_id=17.html">Calendrier Illustré</a>
+			<a href="view_page.php%3Fpage_id=6.html">Mod d'interface</a>
+      <br>
+			
+			<span>Informations</span>
+			<a href="view_page.php%3Fpage_id=9.html">Historiens</a>
+			<a href="view_page.php%3Fpage_id=8.html">FAQ</a>
+			<a href="view_page.php%3Fpage_id=11.html">Liens</a>
+			<a href="view_page.php%3Fpage_id=10.html">Crédits</a>
+			<br>
+
+							
+
+				
+			<div class="menu_bas">&nbsp;</div>
+		</div>
+
+		<div id="principal">
+						
+	
+	
+<div class="event_swap_faction">
+		<a href="recits.php%3Ffiltre_faction=H.html" class="horde" >&nbsp;</a>
+	<a href="recits.php%3Ffiltre_faction=A.html" class="alliance" >&nbsp;</a>
+	<a href="recits.php%3Ffiltre_faction=.html" class="both" style="background-image: url(images/interface/faction_both_link.jpg)" >&nbsp;</a>
+</div>
+<div class="fenetre">			
+		<div class="fenetre_haut">Les Terres de Kirin Tor</div>
+		<div class="fenetre_corps">
+		
+<input type="button" value="Tout déplier" class="input" onClick="view_hide_all_except_events()">
+<input type="button" value="Tout replier" class="input" onClick="view_hide_all('none')">
+<input type="button" value="Tout voir" class="input" onClick="view_hide_all('block')">
+<br><br>
+
+
+
+<a href="recits.php%3Fere_debut=1.html" class="arbo_ere_lien">Ère du Renouveau [280]</a><br><br><a href="recits.php%3Fere_debut=2.html" class="arbo_ere_lien">Ère du Conflit [287]</a><br><br><a href="recits.php%3Fere_debut=3.html" class="arbo_ere_lien">Troisième Ère [406]</a><br><br><a href="recits.php%3Fere_debut=4.html" class="arbo_ere_lien">Quatrième Ère [334]</a><br><br><a href="recits.php%3Fere_debut=5.html" class="arbo_ere_lien">Cinquième Ère [187]</a><br><br><a href="recits.php%3Fere_debut=6.html" class="arbo_ere_lien">Sixième Ère [71]</a><br><br><a href="recits.php%3Fere_debut=7.html" class="arbo_ere_lien">Septième Ère [62]</a><br><br><a href="recits.php%3Fere_debut=8.html" class="arbo_ere_lien">Huitième Ère [18]</a><br><br><a href="recits.php%3Fere_debut=9.html" class="arbo_ere_lien">Neuvième Ère [15]</a><br><br><a href="recits.php%3Fere_debut=10.html" class="arbo_ere_lien">Dixième Ère [41]</a><br><br><a href="recits.php%3Fere_debut=11.html" class="arbo_ere_lien">Onzième Ère [12]</a><br><br><div class="arbo_ere_lien" onclick="open_div('div_12')">Douzième Ère&nbsp;[1]</div>
+<div class="arbo_ere" id="div_12"><div class="arbo_lune_lien" onclick="open_div('div_12_1')">Lune de la Force</div>
+<div class="arbo_lune" id="div_12_1"><div class="arbo_decade_lien" onclick="open_div('div_12_1_1')">Décade du Panda</div>
+<div class="arbo_decade" id="div_12_1_1"><label onMouseover="return overlib('11 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 1 :&nbsp;</label><label onMouseover="return overlib('12 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 2 :&nbsp;</label><label onMouseover="return overlib('13 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 3 :&nbsp;</label><label onMouseover="return overlib('14 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 4 :&nbsp;</label><label onMouseover="return overlib('15 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 5 :&nbsp;</label><label onMouseover="return overlib('16 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 6 :&nbsp;</label><label onMouseover="return overlib('17 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 7 :&nbsp;</label><label onMouseover="return overlib('18 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 8 :&nbsp;</label><label onMouseover="return overlib('19 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 9 :&nbsp;</label><label onMouseover="return overlib('20 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 10 :&nbsp;</label></div><div class="arbo_decade_lien" onclick="open_div('div_12_1_2')">Décade du Gorille</div>
+<div class="arbo_decade" id="div_12_1_2"><label onMouseover="return overlib('21 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 1 :&nbsp;</label><label onMouseover="return overlib('22 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 2 :&nbsp;</label><label onMouseover="return overlib('23 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 3 :&nbsp;</label><label onMouseover="return overlib('24 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 4 :&nbsp;</label><label onMouseover="return overlib('25 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 5 :&nbsp;</label><label onMouseover="return overlib('26 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 6 :&nbsp;</label><label onMouseover="return overlib('27 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 7 :&nbsp;</label><label onMouseover="return overlib('28 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 8 :&nbsp;</label><label onMouseover="return overlib('29 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 9 :&nbsp;</label><label onMouseover="return overlib('30 Novembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 10 :&nbsp;</label></div><div class="arbo_decade_lien" onclick="open_div('div_12_1_3')">Décade de l'Ours</div>
+<div class="arbo_decade" id="div_12_1_3"><label onMouseover="return overlib('01 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 1 :&nbsp;</label><label onMouseover="return overlib('02 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 2 :&nbsp;</label><label onMouseover="return overlib('03 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 3 :&nbsp;</label><label onMouseover="return overlib('04 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 4 :&nbsp;</label><label onMouseover="return overlib('05 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 5 :&nbsp;</label><label onMouseover="return overlib('06 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 6 :&nbsp;</label><label onMouseover="return overlib('07 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 7 :&nbsp;</label><label onMouseover="return overlib('08 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 8 :&nbsp;</label><label onMouseover="return overlib('09 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 9 :&nbsp;</label><label onMouseover="return overlib('10 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 10 :&nbsp;</label></div></div>
+<div class="arbo_lune_lien" onclick="open_div('div_12_2')">Lune d'Agilité</div>
+<div class="arbo_lune" id="div_12_2"><div class="arbo_decade_lien" onclick="open_div('div_12_2_1')">Décade du Tigre</div>
+<div class="arbo_decade" id="div_12_2_1"><label onMouseover="return overlib('11 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 1 :&nbsp;</label><label onMouseover="return overlib('12 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 2 :&nbsp;</label><label onMouseover="return overlib('13 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 3 :&nbsp;</label><label onMouseover="return overlib('14 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 4 :&nbsp;</label><label onMouseover="return overlib('15 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 5 :&nbsp;</label><label onMouseover="return overlib('16 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 6 :&nbsp;</label><label onMouseover="return overlib('17 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 7 :&nbsp;</label><label onMouseover="return overlib('18 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 8 :&nbsp;</label><label onMouseover="return overlib('19 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 9 :&nbsp;</label><label onMouseover="return overlib('20 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 10 :&nbsp;</label></div><div class="arbo_decade_lien" onclick="open_div('div_12_2_2')">Décade du Singe</div>
+<div class="arbo_decade" id="div_12_2_2"><label onMouseover="return overlib('21 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 1 :&nbsp;</label><label onMouseover="return overlib('22 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 2 :&nbsp;</label><label onMouseover="return overlib('23 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 3 :&nbsp;</label><label onMouseover="return overlib('24 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 4 :&nbsp;</label><label onMouseover="return overlib('25 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 5 :&nbsp;</label><label onMouseover="return overlib('26 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 6 :&nbsp;</label><label onMouseover="return overlib('27 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 7 :&nbsp;</label><label onMouseover="return overlib('28 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 8 :&nbsp;</label><label onMouseover="return overlib('29 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 9 :&nbsp;</label><label onMouseover="return overlib('30 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 10 :&nbsp;</label></div><div class="arbo_decade_lien" onclick="open_div('div_12_2_3')">Décade du Faucon</div>
+<div class="arbo_decade" id="div_12_2_3"><label onMouseover="return overlib('31 Décembre 2007 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 1 :&nbsp;</label><label onMouseover="return overlib('01 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 2 :&nbsp;</label><label onMouseover="return overlib('02 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 3 :&nbsp;</label><label onMouseover="return overlib('03 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 4 :&nbsp;</label><label onMouseover="return overlib('04 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 5 :&nbsp;</label><label onMouseover="return overlib('05 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 6 :&nbsp;</label><label onMouseover="return overlib('06 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 7 :&nbsp;</label><label onMouseover="return overlib('07 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 8 :&nbsp;</label><label onMouseover="return overlib('08 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 9 :&nbsp;</label><label onMouseover="return overlib('09 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 10 :&nbsp;</label></div></div>
+<div class="arbo_lune_lien" onclick="open_div('div_12_3')">Lune de l'Esprit&nbsp;[1]</div>
+<div class="arbo_lune" id="div_12_3"><div class="arbo_decade_lien" onclick="open_div('div_12_3_1')">Décade de la Chouette</div>
+<div class="arbo_decade" id="div_12_3_1"><label onMouseover="return overlib('10 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 1 :&nbsp;</label><label onMouseover="return overlib('11 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 2 :&nbsp;</label><label onMouseover="return overlib('12 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 3 :&nbsp;</label><label onMouseover="return overlib('13 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 4 :&nbsp;</label><label onMouseover="return overlib('14 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 5 :&nbsp;</label><label onMouseover="return overlib('15 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 6 :&nbsp;</label><label onMouseover="return overlib('16 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 7 :&nbsp;</label><label onMouseover="return overlib('17 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 8 :&nbsp;</label><label onMouseover="return overlib('18 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 9 :&nbsp;</label><label onMouseover="return overlib('19 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 10 :&nbsp;</label></div><div class="arbo_decade_lien" onclick="open_div('div_12_3_2')">Décade de la Baleine&nbsp;[1]</div>
+<div class="arbo_decade" id="div_12_3_2"><label onMouseover="return overlib('20 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 1 :&nbsp;</label><label onMouseover="return overlib('21 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 2 :&nbsp;</label><label onMouseover="return overlib('22 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 3 :&nbsp;</label><span onclick="open_div('div_12_3_2_3_r_1867')" class="non_officiel">[Yörick] Manifeste de rédemption, chapitre 1</span>
+<blockquote class="arbo_event" id="div_12_3_2_3_r_1867" name="div_12_3_2_3_r_1867"> J&#039;en appelle à tout ceux qui ont subi et fait subir, a tout ceux qui ont souffert et fait souffrir, a tout ceux qui furent blessé et qui blésèrent, j&#039;en appelle à ce qui fait de nous, quel que soit nos terres, nos titres, nos familles ou nos faits d&#039;armes, ...  <a class="see_more" href="Yorick-Manifeste-de-redemption_-chapitre-1-r1867.html"">Lire la suite >>></a><div style="clear:both">&nbsp;</div></blockquote><label onMouseover="return overlib('23 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 4 :&nbsp;</label><label onMouseover="return overlib('24 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 5 :&nbsp;</label><label onMouseover="return overlib('25 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 6 :&nbsp;</label><label onMouseover="return overlib('26 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 7 :&nbsp;</label><label onMouseover="return overlib('27 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 8 :&nbsp;</label><label onMouseover="return overlib('28 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 9 :&nbsp;</label><label onMouseover="return overlib('29 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 10 :&nbsp;</label></div><div class="arbo_decade_lien" onclick="open_div('div_12_3_3')">Décade du Lapin</div>
+<div class="arbo_decade" id="div_12_3_3"><label onMouseover="return overlib('30 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 1 :&nbsp;</label><label onMouseover="return overlib('31 Janvier 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 2 :&nbsp;</label><label onMouseover="return overlib('01 Février 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 3 :&nbsp;</label><label onMouseover="return overlib('02 Février 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 4 :&nbsp;</label><label onMouseover="return overlib('03 Février 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 5 :&nbsp;</label><label onMouseover="return overlib('04 Février 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 6 :&nbsp;</label><label onMouseover="return overlib('05 Février 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 7 :&nbsp;</label><label onMouseover="return overlib('06 Février 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 8 :&nbsp;</label><label onMouseover="return overlib('07 Février 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 9 :&nbsp;</label><label onMouseover="return overlib('08 Février 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 10 :&nbsp;</label><label onMouseover="return overlib('09 Février 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 11 :&nbsp;</label><label onMouseover="return overlib('10 Février 2008 ', LEFT, CSSCLASS);" onMouseOut="return nd()">Jour 12 :&nbsp;</label></div></div>
+</div><script language="javascript">
+	document.getElementById('div_12').style.display='block';
+	document.getElementById('div_12_1').style.display='block';
+	document.getElementById('div_12_2').style.display='block';
+	document.getElementById('div_12_3').style.display='block';
+</script>
+
+			</div>
+		<div class="fenetre_bas">&nbsp;</div>
+	</div>
+
+			
+		</div> <!-- Fermeture du corps -->
+		<div id="page_bottom">&nbsp;</div>
+	</div><!-- Fermeture du conteneur -->
+
+</body>
+</html>

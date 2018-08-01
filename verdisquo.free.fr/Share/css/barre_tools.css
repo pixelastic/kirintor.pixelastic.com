@@ -1,0 +1,86 @@
+@charset "iso-8859-1";
+/* La barre d'outils d'un formulaire, avec moyen de mettre en forme */
+.barre_tools {
+	height:21px;
+	padding:0;
+	margin:0;
+	display:block;
+}
+.barre_tools a {
+	display: block;
+	float:left;
+	width:20px;
+	height:20px;
+	padding-top:2px;
+	background-color: #c0c0c0;
+}
+.barre_tools a:hover {
+	border-right:1px solid gray;
+	border-bottom: 1px solid gray;
+	width:19px;
+	height:19px;
+}
+
+/* la fenetre où les couleurs sont affichées */
+.barre_tools .fenetre_color {
+	display:none;
+	position:absolute;
+	width:120px;
+	height:55px;
+	min-height:70px;
+	margin-top:20px;
+	margin-left: 220px;
+	background-color: #c0c0c0;
+	z-index:10;
+}
+/* L'un des liens de couleur (la couleur de fond est spécifié dans functions/form.php */
+.barre_tools .fenetre_color .choose_color {
+	display: block;
+	float:left;
+	width:15px;
+	height:15px;
+	cursor:pointer;
+	border-right: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0;
+}
+/* la fenetre où les tailles sont affichées */
+.barre_tools .fenetre_size {
+	display:none;
+	position:absolute;
+	width:75px;
+	margin-top:20px;
+	margin-left:240px;
+	border:1px solid gray;
+	background-color: #c0c0c0;
+	z-index:10;
+}
+/* L'un des liens de taille (la taille du texte est spécifié dans function.php) */
+.barre_tools .fenetre_size a {
+	display: block;
+	float:left;
+	width:75px;
+	height:15px;
+	position:relative;
+	cursor:pointer;
+	color:black;
+	text-align:center;
+	padding-top:5px;	
+}
+.barre_tools .fenetre_size a:hover {
+	border: 1px solid red;
+}
+.info_form {
+	border:0;	
+	color:#737373;
+	border-style: none;
+	background: none;
+	font-size:0.8em;
+	width: 400px;
+}
+/* La petite image de choix des images qui doit s'affiche à droite du texte */
+.form_img_mini {
+	position:absolute;
+	margin-left:390px;
+	margin-top:55px;
+}
+

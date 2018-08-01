@@ -1,0 +1,83 @@
+@charset "iso-8859-1";
+#overDiv {
+	position:absolute;
+	visibility:hidden;
+	z-index:1000;
+}
+/* La petite fenetre qui indique la date actuelle */
+#overDiv .petite_date {
+	background-color: #000000;
+	border : solid 1px #B8860B;
+	padding:2;
+	font-size: 0.8em;
+	display:block;
+	font-size:0.8em;
+	width:100px;
+	margin-left:100px;
+}
+#overDiv .bulle_info_caption, #overDiv .bulle_info {
+	background-color: #000000;
+	border : solid 1px #B8860B;
+	font-size: 0.8em;
+	display:block;
+	font-size:0.8em;
+	width:200px;
+}
+#overDiv .bulle_info {
+	padding: 2;
+}
+#overDiv .bulle_info_caption h6 {
+	margin:0;
+	padding:0;
+	background-color: #B8860B;
+	color:white;
+	font-size:1em;
+	display:block;
+}
+
+#overDiv .bulle_erreur {
+	background-color: #000000;
+	border : solid 1px #B8860B;
+	font-size: 0.8em;
+	display:block;
+	font-size:0.pem;
+	width:200px;
+	color:#CC3300;
+	padding:2;	
+}
+
+#overDiv .overlib_calendar {
+	font-size:1em;
+}
+#overDiv .overlib_calendar_jours {
+	color:#FFFFFF;
+}
+#overDiv .overlib_calendar_mois span {
+	font-weight:bold;
+}
+#overDiv .overlib_calendar_mois a {
+	font-size:0.9em;
+	text-decoration:none;
+	color:#B8860B;
+}
+#overDiv .overlib_calendar_mois a:hover {
+	color:#D69A0D;
+}
+#overDiv .calendar_today {
+	color:lime;
+}
+#overDiv table a {
+	display:block;
+	width:100%;
+	height:100%;
+	text-decoration:none;
+	color:#B8860B;
+}
+#overDiv table a:hover {
+	background-color: #737373;
+	color: #000000;
+}
+#overDiv table td {
+	text-align:center;
+}
+
