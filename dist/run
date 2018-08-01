@@ -1,17 +1,13 @@
 #!/usr/bin/env ruby
-require 'fileutils';
+require 'fileutils'
 
-Dir['./*.html'].each do |file|
-  next unless file['%']
-  new_file = file.force_encoding('windows-1252').encode('utf-8')
-  new_file = new_file.gsub('Â%85', '')
-  new_file = new_file.gsub('Â%92', '-')
-  new_file = new_file.gsub('Â%96', '-')
-  new_file = new_file.gsub('Â%9C', 'oe')
-  
-  puts new_file if new_file['%']
+Dir['./Loam-Recit-r1330.html'].each do |file|
+  content = File.read(file)
+
+  new_content = content.gsub(%r{<a href="(.*)">Envoyer un MP</a>}, '')
+  new_content = content.gsub(/<img src="img_genea(.*)>/, '')
+
+  File.write(file, new_content)
 
   # FileUtils.move(file, new_file)
-
 end
-
